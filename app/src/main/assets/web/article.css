@@ -1,0 +1,80 @@
+/* Ark article style. Colors come from the active theme via CSS variables set on :root by the app. */
+:root {
+  --bg: #000000; --surface: #0d0b08; --surface2: #17130c; --text: #e9e1d2; --muted: #9a8f7c;
+  --accent: #ffb000; --accent2: #ffcf66; --line: #2a2418; --link: #ffb000; --visited: #d9962a;
+  --font-scale: 1; --font-body: system-ui, -apple-system, "Roboto", sans-serif; --font-head: Georgia, "Noto Serif", serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: calc(17px * var(--font-scale))/1.6 var(--font-body); overflow-wrap: anywhere; }
+article { padding: 12px 16px 96px; max-width: 760px; margin: 0 auto; }
+h1 { font: 600 calc(30px * var(--font-scale))/1.2 var(--font-head); margin: 12px 0 4px; color: var(--accent); letter-spacing: -0.01em; }
+.subtitle { color: var(--muted); font-size: 0.85em; margin-bottom: 14px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+h2 { font: 600 1.35em/1.25 var(--font-head); margin: 1.6em 0 0.4em; padding-bottom: 4px; border-bottom: 1px solid var(--line); color: var(--accent2); }
+h3 { font-size: 1.12em; margin: 1.3em 0 0.3em; color: var(--accent2); }
+h4, h5, h6 { font-size: 1em; margin: 1.1em 0 0.2em; color: var(--text); }
+p { margin: 0.55em 0 0.8em; }
+a { color: var(--link); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--link) 35%, transparent); }
+a.missing { color: var(--muted); border-bottom: 1px dotted var(--muted); }
+a.ext, .xlink { color: var(--muted); border-bottom: none; }
+a.ext::after { content: " ↗"; font-size: 0.75em; }
+a.coord { font-family: ui-monospace, monospace; font-size: 0.85em; }
+b, strong { color: color-mix(in srgb, var(--text) 85%, var(--accent)); }
+ul, ol { padding-left: 1.4em; margin: 0.4em 0 0.8em; }
+li { margin: 0.2em 0; }
+dl.indent { margin: 0.2em 0 0.2em 1.2em; }
+dl.indent dd { margin: 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 1.4em 0; }
+blockquote { margin: 1em 0; padding: 0.4em 1em; border-left: 3px solid var(--accent); background: var(--surface); color: var(--text); }
+.qcite { color: var(--muted); font-size: 0.9em; margin-top: 0.4em; }
+.poem { white-space: normal; font-style: italic; margin: 0.8em 1em; }
+.hatnote { font-style: italic; color: var(--muted); font-size: 0.92em; margin: 0.3em 0 0.8em; padding-left: 1em; }
+.center { text-align: center; }
+code, pre, .mono { font-family: ui-monospace, "Roboto Mono", monospace; font-size: 0.88em; }
+code { background: var(--surface2); padding: 0.1em 0.3em; border-radius: 3px; }
+pre { background: var(--surface); border: 1px solid var(--line); padding: 10px; overflow-x: auto; white-space: pre; border-radius: 6px; }
+code.math { background: transparent; color: var(--accent2); }
+sup, sub { line-height: 0; }
+
+figure { margin: 0; }
+figure img { display: block; max-width: 100%; height: auto; border-radius: 4px; background: var(--surface2); }
+figure figcaption { font-size: 0.82em; color: var(--muted); line-height: 1.4; padding: 6px 2px 0; }
+figure.thumb { float: right; clear: right; width: 42%; max-width: 280px; margin: 0.3em 0 0.8em 1em; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px; }
+figure.plain { margin: 0.6em 0; }
+figure.plain img { max-width: 100%; }
+figure.missing, figure.gallery-item.missing { display: none; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin: 1em 0; clear: both; }
+.gallery figure { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px; }
+.gallery .gcap { grid-column: 1 / -1; font-size: 0.85em; color: var(--muted); }
+@media (max-width: 480px) { figure.thumb { width: 46%; } }
+
+aside.infobox { float: right; clear: right; width: 46%; max-width: 330px; margin: 0.3em 0 1em 1em; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px; font-size: 0.82em; line-height: 1.4; }
+@media (max-width: 560px) { aside.infobox { float: none; width: 100%; max-width: none; margin: 0.6em 0 1em; } }
+.ib-title { font: 600 1.15em/1.3 var(--font-head); color: var(--accent); text-align: center; margin: 2px 0 8px; }
+aside.infobox figure { margin-bottom: 8px; }
+aside.infobox figure img { margin: 0 auto; }
+aside.infobox table { width: 100%; border-collapse: collapse; }
+aside.infobox th { text-align: left; vertical-align: top; color: var(--muted); font-weight: 600; padding: 4px 8px 4px 0; width: 38%; }
+aside.infobox td { padding: 4px 0; vertical-align: top; border-top: 1px solid var(--line); }
+aside.infobox th { border-top: 1px solid var(--line); }
+
+.tablewrap { overflow-x: auto; margin: 0.8em 0; clear: both; }
+table { border-collapse: collapse; font-size: 0.88em; }
+table.wikitable th, table.wikitable td { border: 1px solid var(--line); padding: 5px 8px; vertical-align: top; }
+table.wikitable th { background: var(--surface2); color: var(--accent2); text-align: left; }
+table.wikitable caption { caption-side: top; text-align: left; color: var(--muted); padding-bottom: 4px; }
+table td, table th { padding: 3px 6px; }
+
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin: 1em 0; font-size: 0.92em; }
+.toc summary { color: var(--accent); cursor: pointer; font-weight: 600; }
+.toc ol { margin: 0.4em 0 0.2em; padding-left: 1.2em; }
+.toc li.l3 { margin-left: 1em; list-style: circle; }
+.toc a { border: none; }
+.mapbtn { display: inline-flex; gap: 6px; align-items: center; margin: 0 0 10px; padding: 6px 12px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-size: 0.85em; }
+.notice { background: var(--surface); border: 1px dashed var(--line); padding: 10px 12px; border-radius: 8px; color: var(--muted); font-size: 0.9em; }
+::selection { background: color-mix(in srgb, var(--accent) 40%, transparent); }
+mark.find { background: var(--accent); color: var(--bg); }
+aside.infobox details summary { color: var(--accent); cursor: pointer; padding: 6px 0 2px; font-weight: 600; }
+.license { color: var(--muted); font-size: 0.78em; }
+ol.bookToc li { margin: 0.35em 0; }
+.mapbtn { cursor: pointer; }

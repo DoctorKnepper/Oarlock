@@ -1,0 +1,12 @@
+/* Light-touch theming for Kiwix pages so they match the reader. Images are left untouched. */
+html, body { background: var(--bg) !important; color: var(--text) !important; }
+body { font-size: calc(100% * var(--font-scale, 1)) !important; }
+body *:not(img):not(svg):not(svg *):not(video):not(canvas):not(picture) { background-color: transparent !important; color: inherit !important; border-color: var(--line) !important; }
+a, a * { color: var(--link) !important; }
+h1, h2, h3, h4 { color: var(--accent) !important; }
+table, th, td { border-color: var(--line) !important; }
+th { background: var(--surface2) !important; }
+.infobox, .navbox, .thumbinner, .mw-parser-output .thumb, figure, .sidebar, pre, code, blockquote, .box, .notice { background: var(--surface) !important; }
+img { background: #fff0; }
+input, textarea, select, button { background: var(--surface) !important; color: var(--text) !important; border: 1px solid var(--line) !important; }
+::selection { background: color-mix(in srgb, var(--accent) 40%, transparent); }

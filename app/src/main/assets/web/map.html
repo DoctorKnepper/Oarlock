@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Map</title>
+<link rel="stylesheet" href="/assets/lib/maplibre-gl.css">
+<link rel="stylesheet" href="/theme.css">
+<style>
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 15px/1.4 system-ui, sans-serif; overflow: hidden; }
+  #map { position: absolute; inset: 0; }
+  .fab { position: absolute; right: 14px; width: 48px; height: 48px; border-radius: 24px; border: 1px solid var(--line); background: var(--surface);
+         color: var(--accent); font-size: 22px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,.4); }
+  #locate { bottom: 96px; } #area { bottom: 36px; font-size: 13px; width: auto; padding: 0 14px; font-weight: 600; }
+  #info { position: absolute; left: 12px; right: 12px; bottom: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+          padding: 12px 14px; display: none; box-shadow: 0 4px 18px rgba(0,0,0,.5); }
+  #info h3 { margin: 0 0 4px; color: var(--accent); font-size: 17px; }
+  #info .row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  #info button, .btn { background: transparent; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 7px 14px; font: inherit; }
+  #info button.primary { background: var(--accent); color: var(--on-accent); }
+  #empty { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; text-align: center; padding: 32px; color: var(--muted); }
+  #empty b { color: var(--accent); display: block; font-size: 18px; margin-bottom: 8px; }
+  .coords { font-family: ui-monospace, monospace; color: var(--muted); font-size: 12px; }
+  .maplibregl-ctrl-attrib { background: color-mix(in srgb, var(--bg) 70%, transparent) !important; color: var(--muted) !important; font-size: 10px; }
+  .maplibregl-ctrl-attrib a { color: var(--muted) !important; }
+  .maplibregl-ctrl-scale { background: transparent !important; color: var(--muted) !important; border-color: var(--muted) !important; }
+  .maplibregl-ctrl-group { background: var(--surface) !important; }
+  .maplibregl-ctrl-group button span { filter: invert(var(--inv, 0)); }
+  .me { width: 16px; height: 16px; border-radius: 8px; background: var(--accent); border: 3px solid var(--bg); box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 30%, transparent); }
+</style>
+<script src="/assets/lib/maplibre-gl.js"></script>
+<script src="/assets/lib/basemaps.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<div id="empty"><div><b>No maps downloaded yet</b>Download the World Overview or a North America map from the Download catalog, then come back here. Your position from GPS works without internet.</div></div>
+<button class="fab" id="locate" title="My location">◎</button>
+<button class="fab" id="area" title="Download this area">⬇ Area</button>
+<div id="info"><h3 id="infoTitle"></h3><div id="infoText" class="coords"></div><div class="row" id="infoRow"></div></div>
+<script>
+const CFG = /*ARK_CONFIG*/null;
+function mix(a, b, t) {
+  const p = h => [1,3,5].map(i => parseInt(h.slice(i, i + 2), 16));
+  const x = p(a), y = p(b);
+  return '#' + x.map((v, i) => Math.round(v + (y[i] - v) * t).toString(16).padStart(2, '0')).join('');
+}
+function flavor() {
+  if (!CFG.dark) {
+    const f = Object.assign({}, basemaps.namedFlavor('light'));
+    f.highway = mix('#ffffff', CFG.accent, 0.55); f.major = mix('#ffffff', CFG.accent, 0.3);
+    f.city_label = CFG.text; f.background = CFG.bg; return f;
+  }
+  const f = Object.assign({}, basemaps.namedFlavor('black'));
+  const bg = CFG.bg, a = CFG.accent;
+  f.background = bg;
+  f.earth = mix(bg, a, 0.05);
+  f.water = mix(bg, '#3d5a73', 0.45);
+  f.park_a = f.park_b = f.wood_a = f.wood_b = mix(bg, '#3f6b45', 0.22);
+  f.scrub_a = f.scrub_b = mix(bg, '#3f6b45', 0.15);
+  f.glacier = mix(bg, '#ffffff', 0.12); f.sand = f.beach = mix(bg, a, 0.1);
+  f.buildings = mix(bg, a, 0.12);
+  f.highway = a; f.highway_casing_early = f.highway_casing_late = bg;
+  f.major = mix(bg, a, 0.62); f.major_casing_early = f.major_casing_late = bg;
+  f.link = mix(bg, a, 0.5);
+  f.minor_a = mix(bg, a, 0.32); f.minor_b = mix(bg, a, 0.24); f.minor_service = mix(bg, a, 0.18); f.other = mix(bg, a, 0.16);
+  f.bridges_highway = a; f.bridges_major = mix(bg, a, 0.62); f.bridges_minor = mix(bg, a, 0.3);
+  f.tunnel_highway = mix(bg, a, 0.4); f.tunnel_major = mix(bg, a, 0.3);
+  f.railway = mix(bg, CFG.text, 0.3);
+  f.boundaries = mix(bg, a, 0.55);
+  f.city_label = CFG.text; f.city_label_halo = bg;
+  f.subplace_label = mix(bg, CFG.text, 0.6); f.subplace_label_halo = bg;
+  f.state_label = mix(bg, a, 0.55); f.state_label_halo = bg;
+  f.country_label = a; f.ocean_label = mix(bg, '#7aa6c9', 0.6);
+  f.roads_label_major = mix(bg, CFG.text, 0.7); f.roads_label_major_halo = bg;
+  f.roads_label_minor = mix(bg, CFG.text, 0.5); f.roads_label_minor_halo = bg;
+  f.address_label = mix(bg, CFG.text, 0.5); f.address_label_halo = bg;
+  return f;
+}
+const sources = CFG.sources || [];
+if (!sources.length) document.getElementById('empty').style.display = 'flex';
+const style = { version: 8, glyphs: 'https://ark.local/assets/fonts/{fontstack}/{range}.pbf',
+  sprite: 'https://ark.local/assets/sprites/' + (CFG.dark ? 'black' : 'light'), sources: {}, layers: [
+  { id: 'bg', type: 'background', paint: { 'background-color': CFG.dark ? mix(CFG.bg, CFG.accent, 0.02) : '#dfe6ea' } }] };
+const fl = flavor();
+sources.forEach((s, i) => {
+  const sid = 's' + i;
+  style.sources[sid] = { type: 'vector', tiles: ['https://ark.local/tiles/' + s.id + '/{z}/{x}/{y}.mvt'], minzoom: s.minzoom, maxzoom: s.maxzoom,
+    bounds: s.bounds, attribution: i === 0 ? '© OpenStreetMap contributors · Protomaps' : '' };
+  const lyr = basemaps.layers(sid, fl, { lang: 'en' });
+  lyr.forEach(l => {
+    // Each pack would paint its own full-screen background over the packs beneath it; Ark draws one shared background instead.
+    if (l.type === 'background') return;
+    l.id = sid + '-' + l.id;
+    // lower-detail packs hide their labels once a more detailed pack would draw them
+    if (i < sources.length - 1 && l.type === 'symbol') l.maxzoom = Math.min(l.maxzoom || 24, s.maxzoom + 1);
+    style.layers.push(l);
+  });
+});
+let center = [-98.5, 39.5], zoom = 3;
+if (CFG.lat != null && CFG.lon != null) { center = [CFG.lon, CFG.lat]; zoom = CFG.z || 11; }
+else { try { const s = JSON.parse(localStorage.getItem('ark-map') || 'null'); if (s) { center = s.c; zoom = s.z; } } catch (e) {} }
+const map = new maplibregl.Map({ container: 'map', style, center, zoom, attributionControl: { compact: true }, maxPitch: 0, dragRotate: false, pitchWithRotate: false });
+map.touchZoomRotate.disableRotation();
+map.addControl(new maplibregl.ScaleControl({ unit: 'imperial' }), 'top-left');
+map.on('moveend', () => { try { localStorage.setItem('ark-map', JSON.stringify({ c: map.getCenter().toArray(), z: map.getZoom() })); } catch (e) {} });
+if (CFG.lat != null) {
+  const el = document.createElement('div'); el.className = 'me'; el.style.background = 'transparent'; el.style.border = '3px solid var(--accent)';
+  new maplibregl.Marker({ element: el }).setLngLat([CFG.lon, CFG.lat]).addTo(map);
+  if (CFG.label) showInfo(CFG.label, CFG.lat, CFG.lon, false);
+}
+let me = null;
+function locate() {
+  if (window.ArkBridge) { ArkBridge.requestLocation(); return; }
+  navigator.geolocation && navigator.geolocation.getCurrentPosition(p => onLocation(p.coords.latitude, p.coords.longitude, p.coords.accuracy), () => {}, { enableHighAccuracy: true, timeout: 20000 });
+}
+function onLocation(lat, lon, acc) {
+  if (!me) { const el = document.createElement('div'); el.className = 'me'; me = new maplibregl.Marker({ element: el }); }
+  me.setLngLat([lon, lat]).addTo(map);
+  map.flyTo({ center: [lon, lat], zoom: Math.max(map.getZoom(), 13) });
+  showInfo('You are here', lat, lon, false, acc);
+}
+document.getElementById('locate').onclick = locate;
+document.getElementById('area').onclick = () => {
+  const b = map.getBounds();
+  if (window.ArkBridge) ArkBridge.downloadArea(b.getWest(), b.getSouth(), b.getEast(), b.getNorth(), map.getZoom());
+};
+function fmt(lat, lon) { return Math.abs(lat).toFixed(5) + '°' + (lat >= 0 ? 'N' : 'S') + '  ' + Math.abs(lon).toFixed(5) + '°' + (lon >= 0 ? 'E' : 'W'); }
+function showInfo(title, lat, lon, canSearch, acc) {
+  document.getElementById('infoTitle').textContent = title;
+  document.getElementById('infoText').textContent = fmt(lat, lon) + (acc ? '  ±' + Math.round(acc) + ' m' : '');
+  const row = document.getElementById('infoRow'); row.innerHTML = '';
+  if (canSearch) {
+    const b = document.createElement('button'); b.className = 'primary'; b.textContent = 'Look it up';
+    b.onclick = () => { if (window.ArkBridge) ArkBridge.search(title); };
+    row.appendChild(b);
+  }
+  const c = document.createElement('button'); c.textContent = 'Copy coordinates';
+  c.onclick = () => { if (window.ArkBridge) ArkBridge.copy(fmt(lat, lon)); };
+  row.appendChild(c);
+  const x = document.createElement('button'); x.textContent = 'Close'; x.onclick = () => document.getElementById('info').style.display = 'none';
+  row.appendChild(x);
+  document.getElementById('info').style.display = 'block';
+}
+map.on('click', e => {
+  const fs = map.queryRenderedFeatures([[e.point.x - 12, e.point.y - 12], [e.point.x + 12, e.point.y + 12]]).filter(f => f.layer.type === 'symbol' && f.properties && (f.properties['name:en'] || f.properties.name));
+  if (fs.length) { const p = fs[0].properties; showInfo(p['name:en'] || p.name, e.lngLat.lat, e.lngLat.lng, true); }
+  else showInfo('Dropped pin', e.lngLat.lat, e.lngLat.lng, false);
+});
+</script>
+</body>
+</html>

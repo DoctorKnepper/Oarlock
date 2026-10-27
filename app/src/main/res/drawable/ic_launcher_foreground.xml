@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <!-- open book -->
+    <path android:fillColor="#FFB000"
+        android:pathData="M53,61 C46,56.5 39,55.5 31,57 L31,36 C39,34.5 46,35.5 53,40 Z" />
+    <path android:fillColor="#FFB000"
+        android:pathData="M55,61 C62,56.5 69,55.5 77,57 L77,36 C69,34.5 62,35.5 55,40 Z" />
+    <!-- hull -->
+    <path android:fillColor="#FFB000"
+        android:pathData="M25,64 L83,64 L75.5,76 C68,80.5 40,80.5 32.5,76 Z" />
+    <path android:fillColor="#000000" android:pathData="M27,64 L81,64 L80,65.6 L28,65.6 Z" />
+</vector>

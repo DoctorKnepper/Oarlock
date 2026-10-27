@@ -1,0 +1,2576 @@
+{
+ "version": 1,
+ "generated": "2026-10-27",
+ "categories": [
+  "Medical",
+  "Survival",
+  "Maps",
+  "Encyclopedias",
+  "Image Packs",
+  "Repair & Skills",
+  "Books",
+  "Education"
+ ],
+ "defcon": [
+  "wikem",
+  "zim-medicine",
+  "water",
+  "knots-lib",
+  "food-prep",
+  "military-medicine",
+  "map-world",
+  "wikimed",
+  "post-disaster",
+  "map-na-12",
+  "books-sacred",
+  "books-skills",
+  "simplewiki",
+  "wikipedia",
+  "ifixit",
+  "appropedia",
+  "wikivoyage",
+  "armypubs"
+ ],
+ "packs": [
+  {
+   "id": "wikem",
+   "kind": "zim",
+   "title": "WikEM Emergency Medicine",
+   "desc": "Concise emergency-medicine reference used by clinicians: conditions, treatments, procedures, doses.",
+   "category": "Medical",
+   "size": 268284928,
+   "zimName": "wikem_en_all",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/other/wikem_en_all_maxi_2026-10.zim",
+   "date": "2026-10-22",
+   "articles": 78413,
+   "images": false
+  },
+  {
+   "id": "wikimed",
+   "kind": "zim",
+   "title": "WikiMed Medical Encyclopedia",
+   "desc": "Every medical article on Wikipedia — anatomy, diseases, drugs, first aid — with images.",
+   "category": "Medical",
+   "size": 1864210432,
+   "zimName": "wikipedia_en_medicine",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_maxi_2026-10.zim",
+   "date": "2026-10-10",
+   "articles": 371615,
+   "images": true
+  },
+  {
+   "id": "zim-medicine",
+   "kind": "zim",
+   "title": "Medical Library",
+   "desc": "Field medicine manuals and guides collected for emergencies (PDFs).",
+   "category": "Medical",
+   "size": 70179840,
+   "zimName": "zimgit-medicine_en",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/other/zimgit-medicine_en_2024-08.zim",
+   "date": "2024-08-29",
+   "articles": 1,
+   "images": false
+  },
+  {
+   "id": "military-medicine",
+   "kind": "zim",
+   "title": "Military Medicine",
+   "desc": "U.S. military medical manuals: trauma care, field surgery, preventive medicine.",
+   "category": "Medical",
+   "size": 75875328,
+   "zimName": "irp.fas.org_en_military-medicine",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/zimit/irp.fas.org_en_military-medicine_2026-05.zim",
+   "date": "2026-05-04",
+   "articles": 26,
+   "images": false
+  },
+  {
+   "id": "nhs-medicines",
+   "kind": "zim",
+   "title": "NHS Medicines A to Z",
+   "desc": "Plain-language guide to common medicines, doses and side effects from the UK NHS.",
+   "category": "Medical",
+   "size": 15323136,
+   "zimName": "nhs.uk_en_medicines",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/zimit/nhs.uk_en_medicines_2026-09b.zim",
+   "date": "2026-09-18",
+   "articles": 1347,
+   "images": false
+  },
+  {
+   "id": "medicine-libretexts",
+   "kind": "zim",
+   "title": "Medicine LibreTexts",
+   "desc": "Open medical and nursing textbooks.",
+   "category": "Medical",
+   "size": 1192567808,
+   "zimName": "libretexts.org_en_med",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_med_2025-01.zim",
+   "date": "2025-01-16",
+   "articles": 23171,
+   "images": false
+  },
+  {
+   "id": "post-disaster",
+   "kind": "zim",
+   "title": "Post-Disaster Resource Library",
+   "desc": "Curated manuals on shelter, water, sanitation, power, food and rebuilding after a disaster.",
+   "category": "Survival",
+   "size": 644666368,
+   "zimName": "zimgit-post-disaster_en",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/other/zimgit-post-disaster_en_2024-05.zim",
+   "date": "2024-05-25",
+   "articles": 1,
+   "images": false
+  },
+  {
+   "id": "water",
+   "kind": "zim",
+   "title": "Water Treatment Library",
+   "desc": "How to find, purify and store safe drinking water.",
+   "category": "Survival",
+   "size": 20925440,
+   "zimName": "zimgit-water_en",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/other/zimgit-water_en_2024-08.zim",
+   "date": "2024-08-29",
+   "articles": 1,
+   "images": false
+  },
+  {
+   "id": "food-prep",
+   "kind": "zim",
+   "title": "Food for Preppers",
+   "desc": "Food storage, preservation and preparation guides.",
+   "category": "Survival",
+   "size": 97822720,
+   "zimName": "zimgit-food-preparation_en",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/other/zimgit-food-preparation_en_2025-04.zim",
+   "date": "2025-04-11",
+   "articles": 1,
+   "images": false
+  },
+  {
+   "id": "knots-lib",
+   "kind": "zim",
+   "title": "A Library of Knots",
+   "desc": "Illustrated guides to useful knots and rope work.",
+   "category": "Survival",
+   "size": 27945984,
+   "zimName": "zimgit-knots_en",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/other/zimgit-knots_en_2024-08.zim",
+   "date": "2024-08-29",
+   "articles": 1,
+   "images": false
+  },
+  {
+   "id": "knots-wiki",
+   "kind": "zim",
+   "title": "Knots (Wikipedia)",
+   "desc": "Every knot article on Wikipedia, with diagrams.",
+   "category": "Survival",
+   "size": 14094336,
+   "zimName": "wikipedia_en_knots",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_knots_maxi_2026-10.zim",
+   "date": "2026-10-18",
+   "articles": 1735,
+   "images": true
+  },
+  {
+   "id": "armypubs",
+   "kind": "zim",
+   "title": "U.S. Army Publications",
+   "desc": "Field manuals and technical manuals from the Army Publishing Directorate, including survival, first aid and engineering.",
+   "category": "Survival",
+   "size": 8232397824,
+   "zimName": "armypubs_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/zimit/armypubs_en_all_2024-12.zim",
+   "date": "2024-12-06",
+   "articles": 42131,
+   "images": false
+  },
+  {
+   "id": "trueprepper",
+   "kind": "zim",
+   "title": "True Prepper",
+   "desc": "Preparedness articles: food storage, bug-out planning, power outages.",
+   "category": "Survival",
+   "size": 1423585280,
+   "zimName": "trueprepper.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/other/trueprepper.com_en_all_2026-05.zim",
+   "date": "2026-05-04",
+   "articles": 399,
+   "images": false
+  },
+  {
+   "id": "outdoors-qa",
+   "kind": "zim",
+   "title": "The Great Outdoors Q&A",
+   "desc": "Questions and answers on hiking, camping and wilderness skills.",
+   "category": "Survival",
+   "size": 141820928,
+   "zimName": "outdoors.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/outdoors.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-20",
+   "articles": 13007,
+   "images": false
+  },
+  {
+   "id": "sustainability-qa",
+   "kind": "zim",
+   "title": "Sustainable Living Q&A",
+   "desc": "Practical answers on low-impact, self-reliant living.",
+   "category": "Survival",
+   "size": 27687936,
+   "zimName": "sustainability.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/sustainability.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-20",
+   "articles": 4668,
+   "images": false
+  },
+  {
+   "id": "ifixit",
+   "kind": "zim",
+   "title": "iFixit Repair Guides",
+   "desc": "Step-by-step repair guides with photos for electronics, vehicles, appliances and tools.",
+   "category": "Repair & Skills",
+   "size": 3570696192,
+   "zimName": "ifixit_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/ifixit/ifixit_en_all_2025-12.zim",
+   "date": "2025-12-21",
+   "articles": 103480,
+   "images": false
+  },
+  {
+   "id": "appropedia",
+   "kind": "zim",
+   "title": "Appropedia",
+   "desc": "Appropriate technology: water, energy, building, farming and low-tech solutions.",
+   "category": "Repair & Skills",
+   "size": 581642240,
+   "zimName": "appropedia_en_all",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/other/appropedia_en_all_maxi_2026-02.zim",
+   "date": "2026-02-26",
+   "articles": 30736,
+   "images": false
+  },
+  {
+   "id": "energypedia",
+   "kind": "zim",
+   "title": "energypedia",
+   "desc": "Off-grid and renewable energy know-how: solar, biogas, cooking stoves, micro-hydro.",
+   "category": "Repair & Skills",
+   "size": 799713280,
+   "zimName": "energypedia_en_all",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/other/energypedia_en_all_maxi_2026-06.zim",
+   "date": "2026-06-20",
+   "articles": 10151,
+   "images": false
+  },
+  {
+   "id": "diy-qa",
+   "kind": "zim",
+   "title": "Home Improvement Q&A",
+   "desc": "Plumbing, wiring, carpentry and home repair answers.",
+   "category": "Repair & Skills",
+   "size": 2086025216,
+   "zimName": "diy.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/diy.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-19",
+   "articles": 166735,
+   "images": false
+  },
+  {
+   "id": "mechanics-qa",
+   "kind": "zim",
+   "title": "Motor Vehicle Mechanics Q&A",
+   "desc": "Car and engine repair answers.",
+   "category": "Repair & Skills",
+   "size": 341672960,
+   "zimName": "mechanics.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/mechanics.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-20",
+   "articles": 55050,
+   "images": false
+  },
+  {
+   "id": "gardening-qa",
+   "kind": "zim",
+   "title": "Gardening & Landscaping Q&A",
+   "desc": "Growing food and plants, soil, pests.",
+   "category": "Repair & Skills",
+   "size": 933097472,
+   "zimName": "gardening.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/gardening.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-19",
+   "articles": 32508,
+   "images": false
+  },
+  {
+   "id": "cooking-qa",
+   "kind": "zim",
+   "title": "Cooking Q&A",
+   "desc": "Practical cooking and food-safety answers.",
+   "category": "Repair & Skills",
+   "size": 238098432,
+   "zimName": "cooking.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/cooking.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-19",
+   "articles": 59758,
+   "images": false
+  },
+  {
+   "id": "electronics-qa",
+   "kind": "zim",
+   "title": "Electronics Q&A",
+   "desc": "Circuits, power supplies, batteries and repair.",
+   "category": "Repair & Skills",
+   "size": 4261398528,
+   "zimName": "electronics.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/electronics.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-19",
+   "articles": 325921,
+   "images": false
+  },
+  {
+   "id": "ham-qa",
+   "kind": "zim",
+   "title": "Amateur Radio Q&A",
+   "desc": "Ham radio equipment, antennas and emergency communication.",
+   "category": "Repair & Skills",
+   "size": 77109248,
+   "zimName": "ham.stackexchange.com_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/stack_exchange/ham.stackexchange.com_en_all_2026-10.zim",
+   "date": "2026-10-20",
+   "articles": 9294,
+   "images": false
+  },
+  {
+   "id": "wikibooks",
+   "kind": "zim",
+   "title": "Wikibooks",
+   "desc": "Open textbooks and how-to manuals, including cookbooks and repair guides.",
+   "category": "Repair & Skills",
+   "size": 3544612864,
+   "zimName": "wikibooks_en_all",
+   "flavour": "nopic",
+   "url": "https://lb.download.kiwix.org/zim/wikibooks/wikibooks_en_all_nopic_2026-10.zim",
+   "date": "2026-10-25",
+   "articles": 131297,
+   "images": false
+  },
+  {
+   "id": "wikipedia",
+   "kind": "wikipedia",
+   "title": "Wikipedia (English, full text)",
+   "desc": "All 7 million English Wikipedia articles as text, straight from Wikimedia's official dump. Opens one article at a time without unpacking the rest. Optional Optimize step shrinks it further.",
+   "category": "Encyclopedias",
+   "size": 27202452918,
+   "dumpUrl": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2",
+   "indexUrl": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream-index.txt.bz2",
+   "indexSize": 285227194,
+   "extraSpace": 700000000
+  },
+  {
+   "id": "simplewiki",
+   "kind": "wikipedia",
+   "title": "Simple English Wikipedia",
+   "desc": "About 270,000 articles written in plain English. A light alternative or companion to the full Wikipedia.",
+   "category": "Encyclopedias",
+   "size": 397919857,
+   "dumpUrl": "https://dumps.wikimedia.org/simplewiki/latest/simplewiki-latest-pages-articles-multistream.xml.bz2",
+   "indexUrl": "https://dumps.wikimedia.org/simplewiki/latest/simplewiki-latest-pages-articles-multistream-index.txt.bz2",
+   "indexSize": 10000000,
+   "extraSpace": 20000000
+  },
+  {
+   "id": "wiki-top",
+   "kind": "zim",
+   "title": "Best of Wikipedia (with images)",
+   "desc": "The ~50,000 most-read Wikipedia articles with pictures. Its images also appear in the full-text Wikipedia.",
+   "category": "Encyclopedias",
+   "size": 6991082496,
+   "zimName": "wikipedia_en_top",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_top_maxi_2026-09.zim",
+   "date": "2026-09-14",
+   "articles": 877754,
+   "images": true
+  },
+  {
+   "id": "wiki-chemistry",
+   "kind": "zim",
+   "title": "Chemistry by Wikipedia (with images)",
+   "desc": "Wikipedia's chemistry articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 383968256,
+   "zimName": "wikipedia_en_chemistry",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_chemistry_maxi_2026-10.zim",
+   "date": "2026-10-15",
+   "articles": 57915,
+   "images": true
+  },
+  {
+   "id": "wiki-physics",
+   "kind": "zim",
+   "title": "Physics by Wikipedia (with images)",
+   "desc": "Wikipedia's physics articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 911983616,
+   "zimName": "wikipedia_en_physics",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_physics_maxi_2026-10.zim",
+   "date": "2026-10-14",
+   "articles": 99599,
+   "images": true
+  },
+  {
+   "id": "wiki-mathematics",
+   "kind": "zim",
+   "title": "Mathematics by Wikipedia (with images)",
+   "desc": "Wikipedia's mathematics articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 996188160,
+   "zimName": "wikipedia_en_mathematics",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_mathematics_maxi_2026-09.zim",
+   "date": "2026-09-15",
+   "articles": 113072,
+   "images": true
+  },
+  {
+   "id": "wiki-geography",
+   "kind": "zim",
+   "title": "Geography by Wikipedia (with images)",
+   "desc": "Wikipedia's geography articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 1232519168,
+   "zimName": "wikipedia_en_geography",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_geography_maxi_2026-10.zim",
+   "date": "2026-10-12",
+   "articles": 213566,
+   "images": true
+  },
+  {
+   "id": "wiki-history",
+   "kind": "zim",
+   "title": "History by Wikipedia (with images)",
+   "desc": "Wikipedia's history articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 1991294976,
+   "zimName": "wikipedia_en_history",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_history_maxi_2026-10.zim",
+   "date": "2026-10-12",
+   "articles": 223143,
+   "images": true
+  },
+  {
+   "id": "wiki-molcell",
+   "kind": "zim",
+   "title": "Molecular & Cell Biology by Wikipedia (with images)",
+   "desc": "Wikipedia's molecular & cell biology articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 728293376,
+   "zimName": "wikipedia_en_molcell",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_molcell_maxi_2026-10.zim",
+   "date": "2026-10-14",
+   "articles": 115157,
+   "images": true
+  },
+  {
+   "id": "wiki-astronomy",
+   "kind": "zim",
+   "title": "Astronomy by Wikipedia (with images)",
+   "desc": "Wikipedia's astronomy articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 1765568512,
+   "zimName": "wikipedia_en_astronomy",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_astronomy_maxi_2026-08.zim",
+   "date": "2026-08-24",
+   "articles": 152761,
+   "images": true
+  },
+  {
+   "id": "wiki-computer",
+   "kind": "zim",
+   "title": "Computing by Wikipedia (with images)",
+   "desc": "Wikipedia's computing articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 910010368,
+   "zimName": "wikipedia_en_computer",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_computer_maxi_2026-09.zim",
+   "date": "2026-09-15",
+   "articles": 244023,
+   "images": true
+  },
+  {
+   "id": "wiki-climate",
+   "kind": "zim",
+   "title": "Climate by Wikipedia (with images)",
+   "desc": "Wikipedia's climate articles with images. Also supplies pictures to matching full-text Wikipedia articles.",
+   "category": "Image Packs",
+   "size": 190425088,
+   "zimName": "wikipedia_en_climate-change",
+   "flavour": "maxi",
+   "url": "https://lb.download.kiwix.org/zim/wikipedia/wikipedia_en_climate-change_maxi_2026-10.zim",
+   "date": "2026-10-13",
+   "articles": 20149,
+   "images": true
+  },
+  {
+   "id": "wiktionary",
+   "kind": "zim",
+   "title": "Wiktionary Dictionary",
+   "desc": "English dictionary and thesaurus with definitions, etymology and translations.",
+   "category": "Encyclopedias",
+   "size": 9156425728,
+   "zimName": "wiktionary_en_all",
+   "flavour": "nopic",
+   "url": "https://lb.download.kiwix.org/zim/wiktionary/wiktionary_en_all_nopic_2026-08.zim",
+   "date": "2026-08-13",
+   "articles": 9129949,
+   "images": false
+  },
+  {
+   "id": "wiktionary-simple",
+   "kind": "zim",
+   "title": "Simple English Wiktionary",
+   "desc": "Compact plain-English dictionary.",
+   "category": "Encyclopedias",
+   "size": 31381504,
+   "zimName": "wiktionary_en-simple_all",
+   "flavour": "nopic",
+   "url": "https://lb.download.kiwix.org/zim/wiktionary/wiktionary_en-simple_all_nopic_2026-10.zim",
+   "date": "2026-10-15",
+   "articles": 54668,
+   "images": false
+  },
+  {
+   "id": "wikivoyage",
+   "kind": "zim",
+   "title": "Wikivoyage Travel Guides",
+   "desc": "Travel guides for every country and city: getting around, where to stay, safety.",
+   "category": "Encyclopedias",
+   "size": 272495616,
+   "zimName": "wikivoyage_en_all",
+   "flavour": "nopic",
+   "url": "https://lb.download.kiwix.org/zim/wikivoyage/wikivoyage_en_all_nopic_2026-09.zim",
+   "date": "2026-09-13",
+   "articles": 68182,
+   "images": false
+  },
+  {
+   "id": "wikisource",
+   "kind": "zim",
+   "title": "Wikisource Library",
+   "desc": "Hundreds of thousands of public-domain texts: historical documents, laws, speeches, scripture translations, literature.",
+   "category": "Books",
+   "size": 3905589248,
+   "zimName": "wikisource_en_all",
+   "flavour": "nopic",
+   "url": "https://lb.download.kiwix.org/zim/wikisource/wikisource_en_all_nopic_2026-09.zim",
+   "date": "2026-09-08",
+   "articles": 857535,
+   "images": false
+  },
+  {
+   "id": "iep",
+   "kind": "zim",
+   "title": "Internet Encyclopedia of Philosophy",
+   "desc": "Peer-reviewed articles on philosophers and philosophical ideas.",
+   "category": "Encyclopedias",
+   "size": 125831168,
+   "zimName": "internet-encyclopedia-philosophy_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/zimit/internet-encyclopedia-philosophy_en_all_2026-05.zim",
+   "date": "2026-05-28",
+   "articles": 1201,
+   "images": false
+  },
+  {
+   "id": "lt-biology",
+   "kind": "zim",
+   "title": "Biology LibreTexts",
+   "desc": "Open biology textbooks.",
+   "category": "Education",
+   "size": 2240947200,
+   "zimName": "libretexts.org_en_bio",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_bio_2025-01.zim",
+   "date": "2025-01-16",
+   "articles": 27000,
+   "images": false
+  },
+  {
+   "id": "lt-chemistry",
+   "kind": "zim",
+   "title": "Chemistry LibreTexts",
+   "desc": "Open chemistry textbooks.",
+   "category": "Education",
+   "size": 2182917120,
+   "zimName": "libretexts.org_en_chem",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_chem_2025-01.zim",
+   "date": "2025-01-16",
+   "articles": 89351,
+   "images": false
+  },
+  {
+   "id": "lt-physics",
+   "kind": "zim",
+   "title": "Physics LibreTexts",
+   "desc": "Open physics textbooks.",
+   "category": "Education",
+   "size": 559554560,
+   "zimName": "libretexts.org_en_phys",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_phys_2026-01.zim",
+   "date": "2026-01-16",
+   "articles": 18480,
+   "images": false
+  },
+  {
+   "id": "lt-math",
+   "kind": "zim",
+   "title": "Mathematics LibreTexts",
+   "desc": "Open mathematics textbooks.",
+   "category": "Education",
+   "size": 830646272,
+   "zimName": "libretexts.org_en_math",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_math_2026-01.zim",
+   "date": "2026-01-16",
+   "articles": 38289,
+   "images": false
+  },
+  {
+   "id": "lt-engineering",
+   "kind": "zim",
+   "title": "Engineering LibreTexts",
+   "desc": "Open engineering textbooks.",
+   "category": "Education",
+   "size": 678394880,
+   "zimName": "libretexts.org_en_eng",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_eng_2025-01.zim",
+   "date": "2025-01-16",
+   "articles": 19644,
+   "images": false
+  },
+  {
+   "id": "lt-geosciences",
+   "kind": "zim",
+   "title": "Geosciences LibreTexts",
+   "desc": "Open geosciences textbooks.",
+   "category": "Education",
+   "size": 1188117504,
+   "zimName": "libretexts.org_en_geo",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_geo_2026-01.zim",
+   "date": "2026-01-16",
+   "articles": 10080,
+   "images": false
+  },
+  {
+   "id": "lt-k12",
+   "kind": "zim",
+   "title": "K-12 Education LibreTexts",
+   "desc": "Open k-12 education textbooks.",
+   "category": "Education",
+   "size": 369809408,
+   "zimName": "libretexts.org_en_k12",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/libretexts/libretexts.org_en_k12_2026-01.zim",
+   "date": "2026-01-16",
+   "articles": 5083,
+   "images": false
+  },
+  {
+   "id": "phet",
+   "kind": "zim",
+   "title": "PhET Science Simulations",
+   "desc": "Interactive math and science simulations.",
+   "category": "Education",
+   "size": 108981248,
+   "zimName": "phet_en_all",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/phet/phet_en_all_2026-08.zim",
+   "date": "2026-08-25",
+   "articles": 120,
+   "images": false
+  },
+  {
+   "id": "books-sacred",
+   "kind": "books",
+   "title": "Sacred & Spiritual Texts",
+   "desc": "Scriptures of the world's ten largest religions and other traditions, in public-domain English translations. 40 books.",
+   "category": "Books",
+   "size": 61610504,
+   "items": [
+    {
+     "src": "pg:10",
+     "t": "The King James Version of the Bible",
+     "a": "",
+     "g": "Christianity"
+    },
+    {
+     "src": "pg:8300",
+     "t": "The Bible, Douay-Rheims, Complete The Challoner Revision",
+     "a": "",
+     "g": "Christianity"
+    },
+    {
+     "src": "pg:124",
+     "t": "Deuterocanonical Books of the Bible Apocrypha",
+     "a": "Anonymous",
+     "g": "Christianity"
+    },
+    {
+     "src": "pg:1653",
+     "t": "The Imitation of Christ",
+     "a": "Thomas à Kempis",
+     "g": "Christianity"
+    },
+    {
+     "src": "pg:3296",
+     "t": "The Confessions of St. Augustine",
+     "a": "Saint Augustine",
+     "g": "Christianity"
+    },
+    {
+     "src": "pg:131",
+     "t": "The Pilgrim's Progress from this world to that which is to come Delivered under the similitude of a dream, by John Bunya",
+     "a": "John Bunyan",
+     "g": "Christianity"
+    },
+    {
+     "src": "pg:2800",
+     "t": "The Koran (Al-Qur'an)",
+     "a": "J. M. Rodwell",
+     "g": "Islam"
+    },
+    {
+     "src": "pg:16955",
+     "t": "Three translations of the Koran (Al-Qur'an) side by side",
+     "a": "Abdullah Yusuf Ali",
+     "g": "Islam"
+    },
+    {
+     "src": "pg:2388",
+     "t": "The Song Celestial; Or, Bhagavad-Gîtâ (from the Mahâbhârata) Being a discourse between Arjuna, Prince of India, and the ",
+     "a": "Edwin Arnold",
+     "g": "Hinduism"
+    },
+    {
+     "src": "pg:3283",
+     "t": "The Upanishads",
+     "a": "Swami Paramananda",
+     "g": "Hinduism"
+    },
+    {
+     "src": "pg:2017",
+     "t": "Dhammapada, a Collection of Verses; Being One of the Canonical Books of the Buddhists",
+     "a": "F. Max Müller",
+     "g": "Buddhism"
+    },
+    {
+     "src": "pg:35895",
+     "t": "The Gospel of Buddha, Compiled from Ancient Records",
+     "a": "Paul Carus",
+     "g": "Buddhism"
+    },
+    {
+     "src": "ia:thesikhreligion01macauoft",
+     "t": "The Sikh Religion, Vol. 1 (Macauliffe, 1909)",
+     "a": "Max Arthur Macauliffe",
+     "g": "Sikhism"
+    },
+    {
+     "src": "ia:thesikhreligioni02macauoft",
+     "t": "The Sikh Religion, Vol. 2 (Macauliffe, 1909)",
+     "a": "Max Arthur Macauliffe",
+     "g": "Sikhism"
+    },
+    {
+     "src": "ia:thesikhreligioni03macauoft",
+     "t": "The Sikh Religion, Vol. 3 (Macauliffe, 1909)",
+     "a": "Max Arthur Macauliffe",
+     "g": "Sikhism"
+    },
+    {
+     "src": "ia:thesikhreligioni05macauoft",
+     "t": "The Sikh Religion, Vol. 5 (Macauliffe, 1909)",
+     "a": "Max Arthur Macauliffe",
+     "g": "Sikhism"
+    },
+    {
+     "src": "ia:thesikhreligioni06macauoft",
+     "t": "The Sikh Religion, Vol. 6 (Macauliffe, 1909)",
+     "a": "Max Arthur Macauliffe",
+     "g": "Sikhism"
+    },
+    {
+     "src": "ia:holyscripturesac028077mbp",
+     "t": "The Holy Scriptures according to the Masoretic Text (JPS, 1917)",
+     "a": "Jewish Publication Society",
+     "g": "Judaism"
+    },
+    {
+     "src": "pg:8547",
+     "t": "Pirke Avot: The Sayings of the Jewish Fathers",
+     "a": "Joseph I. Gorfinkle",
+     "g": "Judaism"
+    },
+    {
+     "src": "pg:14368",
+     "t": "Hebraic Literature; Translations from the Talmud, Midrashim and Kabbala",
+     "a": "Maurice H. Harris",
+     "g": "Judaism"
+    },
+    {
+     "src": "pg:216",
+     "t": "The Tao Teh King, or the Tao and its Characteristics",
+     "a": "Laozi",
+     "g": "Taoism & Confucianism"
+    },
+    {
+     "src": "pg:3330",
+     "t": "The Analects of Confucius (from the Chinese Classics)",
+     "a": "Confucius",
+     "g": "Taoism & Confucianism"
+    },
+    {
+     "src": "pg:59709",
+     "t": "Chuang Tzu: Mystic, Moralist, and Social Reformer",
+     "a": "Zhuangzi",
+     "g": "Taoism & Confucianism"
+    },
+    {
+     "src": "pg:16941",
+     "t": "The Hidden Words of Bahá'u'lláh",
+     "a": "Bahá'u'lláh",
+     "g": "Baháʼí Faith"
+    },
+    {
+     "src": "pg:17310",
+     "t": "Tablets of Bahá'u'lláh Revealed after the Kitab-i-Aqdas",
+     "a": "Bahá'u'lláh",
+     "g": "Baháʼí Faith"
+    },
+    {
+     "src": "pg:19312",
+     "t": "Tablets of Abdul-Baha Abbas",
+     "a": "ʻAbdu'l-Bahá",
+     "g": "Baháʼí Faith"
+    },
+    {
+     "src": "ia:jainasutrasparti029233mbp",
+     "t": "Jaina Sutras, Part 1 (Sacred Books of the East 22)",
+     "a": "Hermann Jacobi",
+     "g": "Jainism"
+    },
+    {
+     "src": "ia:mlbd.gainasutraspart20000vol-45.unse",
+     "t": "Jaina Sutras, Part 2 (Sacred Books of the East 45)",
+     "a": "Hermann Jacobi",
+     "g": "Jainism"
+    },
+    {
+     "src": "pg:46038",
+     "t": "Shinto (the Way of the Gods)",
+     "a": "W. G. Aston",
+     "g": "Shinto"
+    },
+    {
+     "src": "ia:zendavesta02darm",
+     "t": "The Zend-Avesta, Part 2 (Sacred Books of the East 23)",
+     "a": "James Darmesteter",
+     "g": "Zoroastrianism"
+    },
+    {
+     "src": "ia:zendavesta03darm",
+     "t": "The Zend-Avesta, Part 3: Yasna & Gathas (Sacred Books of the East 31)",
+     "a": "L. H. Mills",
+     "g": "Zoroastrianism"
+    },
+    {
+     "src": "pg:17",
+     "t": "The Book of Mormon",
+     "a": "Joseph Smith",
+     "g": "Latter Day Saints"
+    },
+    {
+     "src": "pg:6519",
+     "t": "Songs of Kabir",
+     "a": "Kabir",
+     "g": "Mysticism & Devotion"
+    },
+    {
+     "src": "pg:7164",
+     "t": "Gitanjali",
+     "a": "Rabindranath Tagore",
+     "g": "Mysticism & Devotion"
+    },
+    {
+     "src": "pg:58585",
+     "t": "The Prophet",
+     "a": "Kahlil Gibran",
+     "g": "Mysticism & Devotion",
+     "lite": true
+    },
+    {
+     "src": "pg:7145",
+     "t": "The Book of the Dead",
+     "a": "E. A. Wallis Budge",
+     "g": "Ancient & Indigenous"
+    },
+    {
+     "src": "pg:56550",
+     "t": "The Popol Vuh: The Mythic and Heroic Sagas of the Kichés of Central America",
+     "a": "Lewis Spence",
+     "g": "Ancient & Indigenous"
+    },
+    {
+     "src": "pg:340",
+     "t": "The Soul of the Indian: An Interpretation",
+     "a": "Charles A. Eastman",
+     "g": "Ancient & Indigenous"
+    },
+    {
+     "src": "pg:621",
+     "t": "The Varieties of Religious Experience: A Study in Human Nature",
+     "a": "William James",
+     "g": "Study of Religion"
+    },
+    {
+     "src": "pg:3623",
+     "t": "The Golden Bough: A Study of Magic and Religion",
+     "a": "James George Frazer",
+     "g": "Study of Religion"
+    }
+   ]
+  },
+  {
+   "id": "books-uu",
+   "kind": "books",
+   "title": "Unitarian Universalist Heritage",
+   "desc": "Transcendentalist, Unitarian and Universalist writings that shaped Unitarian Universalism. 10 books.",
+   "category": "Books",
+   "size": 3229682,
+   "items": [
+    {
+     "src": "pg:2944",
+     "t": "Essays — First Series",
+     "a": "Ralph Waldo Emerson",
+     "g": "Transcendentalism"
+    },
+    {
+     "src": "pg:2945",
+     "t": "Essays — Second Series",
+     "a": "Ralph Waldo Emerson",
+     "g": "Transcendentalism"
+    },
+    {
+     "src": "pg:205",
+     "t": "Walden, and On The Duty Of Civil Disobedience",
+     "a": "Henry David Thoreau",
+     "g": "Transcendentalism"
+    },
+    {
+     "src": "pg:8642",
+     "t": "Woman in the Nineteenth Century and Kindred Papers Relating to the Sphere, Condition and Duties, of Woman.",
+     "a": "Margaret Fuller",
+     "g": "Transcendentalism"
+    },
+    {
+     "src": "pg:11142",
+     "t": "Unitarianism",
+     "a": "W. G. Tarrant",
+     "g": "Unitarian & Universalist"
+    },
+    {
+     "src": "pg:18578",
+     "t": "Our Unitarian Gospel",
+     "a": "Minot J. Savage",
+     "g": "Unitarian & Universalist"
+    },
+    {
+     "src": "pg:8605",
+     "t": "Unitarianism in America: A History of its Origin and Development",
+     "a": "George Willis Cooke",
+     "g": "Unitarian & Universalist"
+    },
+    {
+     "src": "pg:34573",
+     "t": "Speeches, Addresses, and Occasional Sermons, Volume 1 (of 3)",
+     "a": "Theodore Parker",
+     "g": "Unitarian & Universalist"
+    },
+    {
+     "src": "pg:8225",
+     "t": "A Series of Letters, in Defence of Divine Revelation In Reply to Rev. Abner Kneeland's Serious Inquiry into the Authenti",
+     "a": "Hosea Ballou",
+     "g": "Unitarian & Universalist"
+    },
+    {
+     "src": "pg:44736",
+     "t": "Slavery",
+     "a": "William Ellery Channing",
+     "g": "Unitarian & Universalist"
+    }
+   ]
+  },
+  {
+   "id": "books-science",
+   "kind": "books",
+   "title": "Foundations of Science",
+   "desc": "Landmark works of mathematics, physics, astronomy, chemistry, biology, medicine and geology. 22 books.",
+   "category": "Books",
+   "size": 79995675,
+   "items": [
+    {
+     "src": "pg:21076",
+     "t": "The First Six Books of the Elements of Euclid",
+     "a": "Euclid",
+     "g": "Mathematics"
+    },
+    {
+     "src": "pg:33283",
+     "t": "Calculus Made Easy Being a very-simplest introduction to those beautiful methods which are generally called by the terri",
+     "a": "Silvanus P. Thompson",
+     "g": "Mathematics"
+    },
+    {
+     "src": "pg:76404",
+     "t": "Newton's Principia",
+     "a": "Isaac Newton",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:33504",
+     "t": "Opticks",
+     "a": "Isaac Newton",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:46036",
+     "t": "The sidereal messenger of Galileo Galilei",
+     "a": "Galileo Galilei",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:30155",
+     "t": "Relativity: The Special and General Theory",
+     "a": "Albert Einstein",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:14725",
+     "t": "Treatise on light",
+     "a": "Christiaan Huygens",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:33810",
+     "t": "On the magnet, magnetick bodies also, and on the great magnet the earth a new physiology, demonstrated by many arguments",
+     "a": "William Gilbert",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:14986",
+     "t": "Experimental Researches in Electricity, Volume 1",
+     "a": "Michael Faraday",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:69914",
+     "t": "An elementary treatise on electricity",
+     "a": "James Clerk Maxwell",
+     "g": "Physics & Astronomy"
+    },
+    {
+     "src": "pg:30775",
+     "t": "Elements of Chemistry, In a New Systematic Order, Containing all the Modern Discoveries",
+     "a": "Antoine Laurent Lavoisier",
+     "g": "Chemistry"
+    },
+    {
+     "src": "pg:22914",
+     "t": "The Sceptical Chymist or Chymico-Physical Doubts & Paradoxes, Touching the Spagyrist's Principles Commonly call'd Hypost",
+     "a": "Robert Boyle",
+     "g": "Chemistry"
+    },
+    {
+     "src": "pg:14474",
+     "t": "The Chemical History of a Candle",
+     "a": "Michael Faraday",
+     "g": "Chemistry"
+    },
+    {
+     "src": "pg:1228",
+     "t": "On the Origin of Species By Means of Natural Selection Or, the Preservation of Favoured Races in the Struggle for Life",
+     "a": "Charles Darwin",
+     "g": "Life Sciences"
+    },
+    {
+     "src": "pg:2300",
+     "t": "The Descent of Man, and Selection in Relation to Sex",
+     "a": "Charles Darwin",
+     "g": "Life Sciences"
+    },
+    {
+     "src": "pg:944",
+     "t": "The Voyage of the Beagle",
+     "a": "Charles Darwin",
+     "g": "Life Sciences"
+    },
+    {
+     "src": "pg:67065",
+     "t": "An anatomical disquisition on the motion of the heart & blood in animals",
+     "a": "William Harvey",
+     "g": "Life Sciences"
+    },
+    {
+     "src": "pg:15491",
+     "t": "Micrographia Some Physiological Descriptions of Minute Bodies Made by Magnifying Glasses with Observations and Inquiries",
+     "a": "Robert Hooke",
+     "g": "Life Sciences"
+    },
+    {
+     "src": "pg:67000",
+     "t": "Fabre's Book of Insects",
+     "a": "Jean-Henri Fabre",
+     "g": "Life Sciences"
+    },
+    {
+     "src": "pg:72583",
+     "t": "The genuine works of Hippocrates, Vol. 1 (of 2)",
+     "a": "Hippocrates",
+     "g": "Medicine"
+    },
+    {
+     "src": "pg:12439",
+     "t": "Notes on Nursing: What It Is, and What It Is Not",
+     "a": "Florence Nightingale",
+     "g": "Medicine"
+    },
+    {
+     "src": "pg:33224",
+     "t": "Principles of Geology or, The Modern Changes of the Earth and its Inhabitants Considered as Illustrative of Geology",
+     "a": "Charles Lyell",
+     "g": "Earth Sciences"
+    }
+   ]
+  },
+  {
+   "id": "books-philosophy",
+   "kind": "books",
+   "title": "Foundations of Philosophy",
+   "desc": "Ancient to modern philosophy, ethics and political thought. 34 books.",
+   "category": "Books",
+   "size": 13409953,
+   "items": [
+    {
+     "src": "pg:1497",
+     "t": "The Republic",
+     "a": "Plato",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:1656",
+     "t": "Apology",
+     "a": "Plato",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:1600",
+     "t": "Symposium",
+     "a": "Plato",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:8438",
+     "t": "The Nicomachean ethics of Aristotle",
+     "a": "Aristotle",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:6762",
+     "t": "Politics: A Treatise on Government",
+     "a": "Aristotle",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:785",
+     "t": "On the Nature of Things",
+     "a": "Titus Lucretius Carus",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:2680",
+     "t": "Meditations",
+     "a": "Marcus Aurelius",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:10661",
+     "t": "A Selection from the Discourses of Epictetus with the Encheiridion",
+     "a": "Epictetus",
+     "g": "Ancient"
+    },
+    {
+     "src": "pg:59",
+     "t": "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+     "a": "René Descartes",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:70091",
+     "t": "Six metaphysical meditations",
+     "a": "René Descartes",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:3800",
+     "t": "Ethics",
+     "a": "Benedictus de Spinoza",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:3207",
+     "t": "Leviathan",
+     "a": "Thomas Hobbes",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:7370",
+     "t": "Second Treatise of Government",
+     "a": "John Locke",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:9662",
+     "t": "An Enquiry Concerning Human Understanding",
+     "a": "David Hume",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:4280",
+     "t": "The Critique of Pure Reason",
+     "a": "Immanuel Kant",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:5682",
+     "t": "Fundamental Principles of the Metaphysic of Morals",
+     "a": "Immanuel Kant",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:4363",
+     "t": "Beyond Good and Evil",
+     "a": "Friedrich Wilhelm Nietzsche",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:1998",
+     "t": "Thus Spake Zarathustra: A Book for All and None",
+     "a": "Friedrich Wilhelm Nietzsche",
+     "g": "Modern"
+    },
+    {
+     "src": "pg:34901",
+     "t": "On Liberty",
+     "a": "John Stuart Mill",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:11224",
+     "t": "Utilitarianism",
+     "a": "John Stuart Mill",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:46333",
+     "t": "The social contract & discourses",
+     "a": "Jean-Jacques Rousseau",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:3300",
+     "t": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+     "a": "Adam Smith",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:1232",
+     "t": "The Prince",
+     "a": "Niccolò Machiavelli",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:147",
+     "t": "Common Sense",
+     "a": "Thomas Paine",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:3742",
+     "t": "The Writings of Thomas Paine — Volume 2 (1779-1792): The Rights of Man",
+     "a": "Thomas Paine",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:1404",
+     "t": "The Federalist Papers",
+     "a": "Alexander Hamilton",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:3420",
+     "t": "A Vindication of the Rights of Woman With Strictures on Political and Moral Subjects",
+     "a": "Mary Wollstonecraft",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:71",
+     "t": "On the Duty of Civil Disobedience",
+     "a": "Henry David Thoreau",
+     "g": "Political & Social"
+    },
+    {
+     "src": "pg:575",
+     "t": "The Essays or Counsels, Civil and Moral",
+     "a": "Francis Bacon",
+     "g": "Essays & Wisdom"
+    },
+    {
+     "src": "pg:3600",
+     "t": "Essays of Michel de Montaigne — Complete",
+     "a": "Michel de Montaigne",
+     "g": "Essays & Wisdom"
+    },
+    {
+     "src": "pg:14328",
+     "t": "The Consolation of Philosophy",
+     "a": "Boethius",
+     "g": "Essays & Wisdom"
+    },
+    {
+     "src": "pg:18269",
+     "t": "Pascal's Pensées",
+     "a": "Blaise Pascal",
+     "g": "Essays & Wisdom"
+    },
+    {
+     "src": "pg:5116",
+     "t": "Pragmatism: A New Name for Some Old Ways of Thinking",
+     "a": "William James",
+     "g": "Essays & Wisdom"
+    },
+    {
+     "src": "pg:132",
+     "t": "The Art of War",
+     "a": "Sun Tzu",
+     "g": "Essays & Wisdom"
+    }
+   ]
+  },
+  {
+   "id": "books-mind",
+   "kind": "books",
+   "title": "Mind, Society & Economics",
+   "desc": "Founding works of psychology, sociology, economics and civil rights. 11 books.",
+   "category": "Books",
+   "size": 9852578,
+   "items": [
+    {
+     "src": "pg:66048",
+     "t": "The Interpretation of Dreams",
+     "a": "Sigmund Freud",
+     "g": "Psychology"
+    },
+    {
+     "src": "pg:57628",
+     "t": "The Principles of Psychology, Volume 1 (of 2)",
+     "a": "William James",
+     "g": "Psychology"
+    },
+    {
+     "src": "pg:57634",
+     "t": "The Principles of Psychology, Volume 2 (of 2)",
+     "a": "William James",
+     "g": "Psychology"
+    },
+    {
+     "src": "pg:37423",
+     "t": "How We Think",
+     "a": "John Dewey",
+     "g": "Psychology"
+    },
+    {
+     "src": "pg:815",
+     "t": "Democracy in America — Volume 1",
+     "a": "Alexis de Tocqueville",
+     "g": "Society & Rights"
+    },
+    {
+     "src": "pg:816",
+     "t": "Democracy in America — Volume 2",
+     "a": "Alexis de Tocqueville",
+     "g": "Society & Rights"
+    },
+    {
+     "src": "pg:27083",
+     "t": "The Subjection of Women",
+     "a": "John Stuart Mill",
+     "g": "Society & Rights"
+    },
+    {
+     "src": "pg:408",
+     "t": "The Souls of Black Folk",
+     "a": "W. E. B. Du Bois",
+     "g": "Society & Rights"
+    },
+    {
+     "src": "pg:833",
+     "t": "The Theory of the Leisure Class",
+     "a": "Thorstein Veblen",
+     "g": "Economics"
+    },
+    {
+     "src": "pg:55308",
+     "t": "Progress and Poverty, Volumes I and II An Inquiry into the Cause of Industrial Depressions and of Increase of Want with ",
+     "a": "Henry George",
+     "g": "Economics"
+    },
+    {
+     "src": "pg:61",
+     "t": "The Communist Manifesto",
+     "a": "Karl Marx",
+     "g": "Economics"
+    }
+   ]
+  },
+  {
+   "id": "books-skills",
+   "kind": "books",
+   "title": "Practical Skills & Self-Reliance",
+   "desc": "Older public-domain guides to woodcraft, cooking, food preservation, gardening, farming, herbs and radio. Historic advice: check anything safety-critical against current guidance. 21 books.",
+   "category": "Books",
+   "size": 78541584,
+   "items": [
+    {
+     "src": "pg:29558",
+     "t": "Boy Scouts Handbook The First Edition, 1911",
+     "a": "Boy Scouts of America",
+     "g": "Outdoors & Woodcraft"
+    },
+    {
+     "src": "pg:34607",
+     "t": "Woodcraft and Camping",
+     "a": "George Washington Sears",
+     "g": "Outdoors & Woodcraft"
+    },
+    {
+     "src": "pg:44215",
+     "t": "The Book of Camp-Lore and Woodcraft",
+     "a": "Daniel Carter Beard",
+     "g": "Outdoors & Woodcraft"
+    },
+    {
+     "src": "pg:28255",
+     "t": "Shelters, Shacks and Shanties",
+     "a": "Daniel Carter Beard",
+     "g": "Outdoors & Woodcraft"
+    },
+    {
+     "src": "pg:54138",
+     "t": "Camp Cookery. How to Live in Camp",
+     "a": "Maria Parloa",
+     "g": "Outdoors & Woodcraft"
+    },
+    {
+     "src": "pg:9198",
+     "t": "The Complete Angler 1653",
+     "a": "Izaak Walton",
+     "g": "Outdoors & Woodcraft"
+    },
+    {
+     "src": "pg:13510",
+     "t": "Knots, Splices and Rope Work A Practical Treatise Giving Complete and Simple Directions for Making All the Most Useful a",
+     "a": "A. Hyatt Verrill",
+     "g": "Knots & Rope"
+    },
+    {
+     "src": "pg:8542",
+     "t": "Things Mother Used to Make A Collection of Old Time Recipes, Some Nearly One Hundred Years Old and Never Published Befor",
+     "a": "Lydia Maria Gurney",
+     "g": "Food & Preserving"
+    },
+    {
+     "src": "pg:65061",
+     "t": "The Boston cooking-school cook book",
+     "a": "Fannie Merritt Farmer",
+     "g": "Food & Preserving"
+    },
+    {
+     "src": "pg:66136",
+     "t": "Home Canning of Fruits and Vegetables",
+     "a": "United States. Agricultural Research Service. Human Nutrition Research Division",
+     "g": "Food & Preserving"
+    },
+    {
+     "src": "pg:63056",
+     "t": "Home Canning of Meat and Poultry",
+     "a": "United States. Agricultural Research Service. Consumer and Food Economics Research Division",
+     "g": "Food & Preserving"
+    },
+    {
+     "src": "pg:10136",
+     "t": "The Book of Household Management",
+     "a": "Mrs. Beeton",
+     "g": "Food & Preserving"
+    },
+    {
+     "src": "pg:7123",
+     "t": "Home Vegetable Gardening A Complete and Practical Guide to the Planting and Care of All Vegetables, Fruits and Berries W",
+     "a": "F. F. Rockwell",
+     "g": "Garden & Farm"
+    },
+    {
+     "src": "pg:39791",
+     "t": "Farm Mechanics: Machinery and Its Use to Save Hand Labor on the Farm.",
+     "a": "Herbert A. Shearer",
+     "g": "Garden & Farm"
+    },
+    {
+     "src": "pg:25185",
+     "t": "Mysteries of Bee-keeping Explained",
+     "a": "M. Quinby",
+     "g": "Garden & Farm"
+    },
+    {
+     "src": "pg:49513",
+     "t": "The Complete Herbal To which is now added, upwards of one hundred additional herbs, with a display of their medicinal an",
+     "a": "Nicholas Culpeper",
+     "g": "Herbs & Wild Plants"
+    },
+    {
+     "src": "pg:3003",
+     "t": "Wild Flowers An Aid to Knowledge of Our Wild Flowers and Their Insect Visitors",
+     "a": "Neltje Blanchan",
+     "g": "Herbs & Wild Plants"
+    },
+    {
+     "src": "pg:30734",
+     "t": "Mushrooms of America, Edible and Poisonous",
+     "a": "Julius A. Palmer",
+     "g": "Herbs & Wild Plants"
+    },
+    {
+     "src": "pg:20763",
+     "t": "Carpentry for Boys In a Simple Language, Including Chapters on Drawing, Laying Out Work, Designing and Architecture With",
+     "a": "James Slough Zerbe",
+     "g": "Building, Tools & Crafts"
+    },
+    {
+     "src": "pg:21724",
+     "t": "The handbook of soap manufacture",
+     "a": "W. H. Simmons",
+     "g": "Building, Tools & Crafts"
+    },
+    {
+     "src": "pg:6934",
+     "t": "The Radio Amateur's Hand Book A Complete, Authentic and Informative Work on Wireless Telegraphy and Telephony",
+     "a": "A. Frederick Collins",
+     "g": "Radio"
+    }
+   ]
+  },
+  {
+   "id": "books-classics",
+   "kind": "books",
+   "title": "Classic Novels",
+   "desc": "The great novels of world literature. 15 books.",
+   "category": "Books",
+   "size": 23985529,
+   "items": [
+    {
+     "src": "pg:1342",
+     "t": "Pride and Prejudice",
+     "a": "Jane Austen",
+     "g": "Novels",
+     "lite": true
+    },
+    {
+     "src": "pg:2701",
+     "t": "Moby Dick; Or, The Whale",
+     "a": "Herman Melville",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:135",
+     "t": "Les Misérables",
+     "a": "Victor Hugo",
+     "g": "Novels",
+     "lite": true
+    },
+    {
+     "src": "pg:2600",
+     "t": "War and Peace",
+     "a": "Leo Tolstoy",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:2554",
+     "t": "Crime and Punishment",
+     "a": "Fyodor Dostoyevsky",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:84",
+     "t": "Frankenstein; or, The modern Prometheus",
+     "a": "Mary Shelley",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:98",
+     "t": "A Tale of Two Cities",
+     "a": "Charles Dickens",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:76",
+     "t": "Adventures of Huckleberry Finn",
+     "a": "Mark Twain",
+     "g": "Novels",
+     "lite": true
+    },
+    {
+     "src": "pg:1400",
+     "t": "Great Expectations",
+     "a": "Charles Dickens",
+     "g": "Novels",
+     "lite": true
+    },
+    {
+     "src": "pg:1260",
+     "t": "Jane Eyre: An Autobiography",
+     "a": "Charlotte Brontë",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:1184",
+     "t": "The Count of Monte Cristo",
+     "a": "Alexandre Dumas",
+     "g": "Novels",
+     "lite": true
+    },
+    {
+     "src": "pg:1399",
+     "t": "Anna Karenina",
+     "a": "Leo Tolstoy",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:28054",
+     "t": "The Brothers Karamazov",
+     "a": "Fyodor Dostoyevsky",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:145",
+     "t": "Middlemarch",
+     "a": "George Eliot",
+     "g": "Novels"
+    },
+    {
+     "src": "pg:996",
+     "t": "Don Quixote",
+     "a": "Miguel de Cervantes Saavedra",
+     "g": "Novels",
+     "lite": true
+    }
+   ]
+  },
+  {
+   "id": "books-poetry",
+   "kind": "books",
+   "title": "Poetry & Drama",
+   "desc": "Major poets and playwrights, from Sophocles and Shakespeare to Dickinson and Frost. 21 books.",
+   "category": "Books",
+   "size": 49912382,
+   "items": [
+    {
+     "src": "pg:26",
+     "t": "Paradise Lost",
+     "a": "John Milton",
+     "g": "Epic & Narrative Poetry"
+    },
+    {
+     "src": "pg:8800",
+     "t": "The divine comedy",
+     "a": "Dante Alighieri",
+     "g": "Epic & Narrative Poetry",
+     "lite": true
+    },
+    {
+     "src": "pg:2383",
+     "t": "The Canterbury Tales, and Other Poems",
+     "a": "Geoffrey Chaucer",
+     "g": "Epic & Narrative Poetry"
+    },
+    {
+     "src": "pg:610",
+     "t": "Idylls of the King",
+     "a": "Alfred Tennyson",
+     "g": "Epic & Narrative Poetry"
+    },
+    {
+     "src": "pg:19",
+     "t": "The Song of Hiawatha",
+     "a": "Henry Wadsworth Longfellow",
+     "g": "Epic & Narrative Poetry"
+    },
+    {
+     "src": "pg:1322",
+     "t": "Leaves of Grass",
+     "a": "Walt Whitman",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:12242",
+     "t": "Poems by Emily Dickinson, Three Series, Complete",
+     "a": "Emily Dickinson",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:1934",
+     "t": "Songs of Innocence and of Experience",
+     "a": "William Blake",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:8209",
+     "t": "Poems 1817",
+     "a": "John Keats",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:9622",
+     "t": "Lyrical Ballads, With a Few Other Poems (1798)",
+     "a": "William Wordsworth",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:246",
+     "t": "The Rubaiyat of Omar Khayyam",
+     "a": "Omar Khayyam",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:10031",
+     "t": "The Complete Poetical Works of Edgar Allan Poe Including Essays on Poetry",
+     "a": "Edgar Allan Poe",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:3026",
+     "t": "North of Boston",
+     "a": "Robert Frost",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:1280",
+     "t": "Spoon River Anthology",
+     "a": "Edgar Lee Masters",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:1041",
+     "t": "Shakespeare's Sonnets",
+     "a": "William Shakespeare",
+     "g": "Poetry"
+    },
+    {
+     "src": "pg:100",
+     "t": "The Complete Works of William Shakespeare",
+     "a": "William Shakespeare",
+     "g": "Drama"
+    },
+    {
+     "src": "pg:31",
+     "t": "Plays of Sophocles: Oedipus the King; Oedipus at Colonus; Antigone",
+     "a": "Sophocles",
+     "g": "Drama"
+    },
+    {
+     "src": "pg:14591",
+     "t": "Faust [part 1]. Translated Into English in the Original Metres",
+     "a": "Johann Wolfgang von Goethe",
+     "g": "Drama"
+    },
+    {
+     "src": "pg:2542",
+     "t": "A Doll's House : a play",
+     "a": "Henrik Ibsen",
+     "g": "Drama"
+    },
+    {
+     "src": "pg:844",
+     "t": "The Importance of Being Earnest: A Trivial Comedy for Serious People",
+     "a": "Oscar Wilde",
+     "g": "Drama"
+    },
+    {
+     "src": "pg:1254",
+     "t": "Cyrano de Bergerac",
+     "a": "Edmond Rostand",
+     "g": "Drama"
+    }
+   ]
+  },
+  {
+   "id": "books-genre",
+   "kind": "books",
+   "title": "Adventure, Mystery & Science Fiction",
+   "desc": "Detective stories, early science fiction, gothic horror and swashbuckling adventure. 30 books.",
+   "category": "Books",
+   "size": 22379987,
+   "items": [
+    {
+     "src": "pg:1661",
+     "t": "The Adventures of Sherlock Holmes",
+     "a": "Arthur Conan Doyle",
+     "g": "Mystery & Detective"
+    },
+    {
+     "src": "pg:2852",
+     "t": "The Hound of the Baskervilles",
+     "a": "Arthur Conan Doyle",
+     "g": "Mystery & Detective"
+    },
+    {
+     "src": "pg:155",
+     "t": "The Moonstone",
+     "a": "Wilkie Collins",
+     "g": "Mystery & Detective"
+    },
+    {
+     "src": "pg:863",
+     "t": "The Mysterious Affair at Styles",
+     "a": "Agatha Christie",
+     "g": "Mystery & Detective"
+    },
+    {
+     "src": "pg:69087",
+     "t": "The murder of Roger Ackroyd",
+     "a": "Agatha Christie",
+     "g": "Mystery & Detective"
+    },
+    {
+     "src": "pg:558",
+     "t": "The Thirty-Nine Steps",
+     "a": "John Buchan",
+     "g": "Mystery & Detective"
+    },
+    {
+     "src": "pg:35",
+     "t": "The Time Machine",
+     "a": "H. G. Wells",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:36",
+     "t": "The war of the worlds",
+     "a": "H. G. Wells",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:5230",
+     "t": "The Invisible Man: A Grotesque Romance",
+     "a": "H. G. Wells",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:164",
+     "t": "Twenty Thousand Leagues under the Sea",
+     "a": "Jules Verne",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:18857",
+     "t": "A Journey to the Centre of the Earth",
+     "a": "Jules Verne",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:62",
+     "t": "A princess of Mars",
+     "a": "Edgar Rice Burroughs",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:201",
+     "t": "Flatland: A Romance of Many Dimensions",
+     "a": "Edwin Abbott Abbott",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:32",
+     "t": "Herland",
+     "a": "Charlotte Perkins Gilman",
+     "g": "Science Fiction"
+    },
+    {
+     "src": "pg:345",
+     "t": "Dracula",
+     "a": "Bram Stoker",
+     "g": "Gothic & Horror"
+    },
+    {
+     "src": "pg:43",
+     "t": "The strange case of Dr. Jekyll and Mr. Hyde",
+     "a": "Robert Louis Stevenson",
+     "g": "Gothic & Horror"
+    },
+    {
+     "src": "pg:209",
+     "t": "The Turn of the Screw",
+     "a": "Henry James",
+     "g": "Gothic & Horror"
+    },
+    {
+     "src": "pg:10007",
+     "t": "Carmilla",
+     "a": "Joseph Sheridan Le Fanu",
+     "g": "Gothic & Horror"
+    },
+    {
+     "src": "pg:174",
+     "t": "The Picture of Dorian Gray",
+     "a": "Oscar Wilde",
+     "g": "Gothic & Horror"
+    },
+    {
+     "src": "pg:68283",
+     "t": "The call of Cthulhu",
+     "a": "H. P. Lovecraft",
+     "g": "Gothic & Horror"
+    },
+    {
+     "src": "pg:175",
+     "t": "The Phantom of the Opera",
+     "a": "Gaston Leroux",
+     "g": "Gothic & Horror"
+    },
+    {
+     "src": "pg:1257",
+     "t": "The three musketeers",
+     "a": "Alexandre Dumas",
+     "g": "Adventure"
+    },
+    {
+     "src": "pg:215",
+     "t": "The call of the wild",
+     "a": "Jack London",
+     "g": "Adventure"
+    },
+    {
+     "src": "pg:910",
+     "t": "White Fang",
+     "a": "Jack London",
+     "g": "Adventure"
+    },
+    {
+     "src": "pg:421",
+     "t": "Kidnapped",
+     "a": "Robert Louis Stevenson",
+     "g": "Adventure",
+     "lite": true
+    },
+    {
+     "src": "pg:82",
+     "t": "Ivanhoe: A Romance",
+     "a": "Walter Scott",
+     "g": "Adventure"
+    },
+    {
+     "src": "pg:940",
+     "t": "The Last of the Mohicans; A narrative of 1757",
+     "a": "James Fenimore Cooper",
+     "g": "Adventure"
+    },
+    {
+     "src": "pg:60",
+     "t": "The Scarlet Pimpernel",
+     "a": "Baroness Orczy",
+     "g": "Adventure"
+    },
+    {
+     "src": "pg:2166",
+     "t": "King Solomon's Mines",
+     "a": "H. Rider Haggard",
+     "g": "Adventure"
+    },
+    {
+     "src": "pg:1965",
+     "t": "Captain Blood",
+     "a": "Rafael Sabatini",
+     "g": "Adventure"
+    }
+   ]
+  },
+  {
+   "id": "books-myth",
+   "kind": "books",
+   "title": "Myth, Epic & Folklore",
+   "desc": "The world's foundational stories. 13 books.",
+   "category": "Books",
+   "size": 7009240,
+   "items": [
+    {
+     "src": "pg:2199",
+     "t": "The Iliad",
+     "a": "Homer",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:1727",
+     "t": "The Odyssey Rendered into English prose for the use of those who cannot read the original",
+     "a": "Homer",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:16328",
+     "t": "Beowulf: An Anglo-Saxon Epic Poem",
+     "a": "J. Lesslie Hall",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:5186",
+     "t": "Kalevala : the Epic Poem of Finland — Complete",
+     "a": "Elias Lönnrot",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:5160",
+     "t": "The Mabinogion",
+     "a": "Lady Charlotte Guest",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:11000",
+     "t": "An Old Babylonian Version of the Gilgamesh Epic",
+     "a": "Morris Jastrow",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:1152",
+     "t": "The Story of the Volsungs (Volsunga Saga); with Excerpts from the Poetic Edda",
+     "a": "Eiríkr Magnússon",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:13268",
+     "t": "Hindu literature : Comprising The Book of good counsels, Nala and Damayanti, The Ramayana, and Sakoontala",
+     "a": "Epiphanius Wilson",
+     "g": "Epics"
+    },
+    {
+     "src": "pg:4928",
+     "t": "Bulfinch's Mythology",
+     "a": "Thomas Bulfinch",
+     "g": "Myth & Folk Tales"
+    },
+    {
+     "src": "pg:2591",
+     "t": "Grimms' Fairy Tales",
+     "a": "Jacob Grimm",
+     "g": "Myth & Folk Tales"
+    },
+    {
+     "src": "pg:1597",
+     "t": "Andersen's Fairy Tales",
+     "a": "H. C. Andersen",
+     "g": "Myth & Folk Tales"
+    },
+    {
+     "src": "pg:21",
+     "t": "Three hundred Aesop’s fables Translated by George Fyler Townsend",
+     "a": "Aesop",
+     "g": "Myth & Folk Tales"
+    },
+    {
+     "src": "pg:34206",
+     "t": "The Thousand and One Nights, Vol. I. Commonly Called the Arabian Nights' Entertainments",
+     "a": "Edward William Lane",
+     "g": "Myth & Folk Tales",
+     "lite": true
+    }
+   ]
+  },
+  {
+   "id": "books-history",
+   "kind": "books",
+   "title": "History & Civics",
+   "desc": "Founding documents and the great histories. 8 books.",
+   "category": "Books",
+   "size": 7043914,
+   "items": [
+    {
+     "src": "pg:1",
+     "t": "The Declaration of Independence of the United States of America",
+     "a": "Thomas Jefferson",
+     "g": "Founding Documents"
+    },
+    {
+     "src": "pg:2",
+     "t": "The United States Bill of Rights The Ten Original Amendments to the Constitution of the United States",
+     "a": "United States",
+     "g": "Founding Documents"
+    },
+    {
+     "src": "pg:5",
+     "t": "The United States Constitution",
+     "a": "United States",
+     "g": "Founding Documents"
+    },
+    {
+     "src": "pg:1404",
+     "t": "The Federalist Papers",
+     "a": "Alexander Hamilton",
+     "g": "Founding Documents"
+    },
+    {
+     "src": "pg:2707",
+     "t": "The History of Herodotus — Volume 1",
+     "a": "Herodotus",
+     "g": "Histories"
+    },
+    {
+     "src": "pg:7142",
+     "t": "The History of the Peloponnesian War",
+     "a": "Thucydides",
+     "g": "Histories"
+    },
+    {
+     "src": "pg:674",
+     "t": "Plutarch: Lives of the noble Grecians and Romans",
+     "a": "Plutarch",
+     "g": "Histories"
+    },
+    {
+     "src": "pg:731",
+     "t": "History of the Decline and Fall of the Roman Empire — Volume 1",
+     "a": "Edward Gibbon",
+     "g": "Histories"
+    }
+   ]
+  },
+  {
+   "id": "books-lives",
+   "kind": "books",
+   "title": "Lives, Journeys & Nature",
+   "desc": "Memoirs, exploration and nature writing. 15 books.",
+   "category": "Books",
+   "size": 24024415,
+   "items": [
+    {
+     "src": "pg:23",
+     "t": "Narrative of the Life of Frederick Douglass, an American Slave",
+     "a": "Frederick Douglass",
+     "g": "Memoir & Biography"
+    },
+    {
+     "src": "pg:11030",
+     "t": "Incidents in the Life of a Slave Girl, Written by Herself",
+     "a": "Harriet A. Jacobs",
+     "g": "Memoir & Biography"
+    },
+    {
+     "src": "pg:2376",
+     "t": "Up from Slavery: An Autobiography",
+     "a": "Booker T. Washington",
+     "g": "Memoir & Biography"
+    },
+    {
+     "src": "pg:2397",
+     "t": "The Story of My Life With her letters (1887-1901) and a supplementary account of her education, including passages from ",
+     "a": "Helen Keller",
+     "g": "Memoir & Biography"
+    },
+    {
+     "src": "pg:20203",
+     "t": "Autobiography of Benjamin Franklin",
+     "a": "Benjamin Franklin",
+     "g": "Memoir & Biography"
+    },
+    {
+     "src": "pg:4367",
+     "t": "Personal Memoirs of U. S. Grant, Complete",
+     "a": "Ulysses S. Grant",
+     "g": "Memoir & Biography"
+    },
+    {
+     "src": "pg:8419",
+     "t": "The Journals of Lewis and Clark, 1804-1806",
+     "a": "Meriwether Lewis",
+     "g": "Travel & Exploration"
+    },
+    {
+     "src": "pg:2055",
+     "t": "Two Years Before the Mast",
+     "a": "Richard Henry Dana",
+     "g": "Travel & Exploration"
+    },
+    {
+     "src": "pg:3177",
+     "t": "Roughing It",
+     "a": "Mark Twain",
+     "g": "Travel & Exploration",
+     "lite": true
+    },
+    {
+     "src": "pg:3176",
+     "t": "The Innocents Abroad",
+     "a": "Mark Twain",
+     "g": "Travel & Exploration",
+     "lite": true
+    },
+    {
+     "src": "pg:5199",
+     "t": "South: The Story of Shackleton's Last Expedition, 1914-1917",
+     "a": "Ernest Shackleton",
+     "g": "Travel & Exploration"
+    },
+    {
+     "src": "pg:11579",
+     "t": "Scott's Last Expedition, Volume I Being the journals of Captain R. F. Scott",
+     "a": "Robert Falcon Scott",
+     "g": "Travel & Exploration"
+    },
+    {
+     "src": "pg:32540",
+     "t": "My First Summer in the Sierra",
+     "a": "John Muir",
+     "g": "Nature Writing"
+    },
+    {
+     "src": "pg:1408",
+     "t": "The Natural History of Selborne",
+     "a": "Gilbert White",
+     "g": "Nature Writing"
+    },
+    {
+     "src": "pg:42500",
+     "t": "The Maine Woods The Writings of Henry David Thoreau, Volume 03 (of 20)",
+     "a": "Henry David Thoreau",
+     "g": "Nature Writing"
+    }
+   ]
+  },
+  {
+   "id": "books-children",
+   "kind": "books",
+   "title": "Children's Classics",
+   "desc": "Stories for younger readers. 10 books.",
+   "category": "Books",
+   "size": 3671900,
+   "items": [
+    {
+     "src": "pg:11",
+     "t": "Alice's Adventures in Wonderland",
+     "a": "Lewis Carroll",
+     "g": "Stories"
+    },
+    {
+     "src": "pg:16",
+     "t": "Peter Pan",
+     "a": "J. M. Barrie",
+     "g": "Stories"
+    },
+    {
+     "src": "pg:55",
+     "t": "The Wonderful Wizard of Oz",
+     "a": "L. Frank Baum",
+     "g": "Stories"
+    },
+    {
+     "src": "pg:120",
+     "t": "Treasure Island",
+     "a": "Robert Louis Stevenson",
+     "g": "Stories",
+     "lite": true
+    },
+    {
+     "src": "pg:236",
+     "t": "The Jungle Book",
+     "a": "Rudyard Kipling",
+     "g": "Stories",
+     "lite": true
+    },
+    {
+     "src": "pg:3836",
+     "t": "Swiss Family Robinson",
+     "a": "Johann David Wyss",
+     "g": "Stories"
+    },
+    {
+     "src": "pg:521",
+     "t": "The Life and Adventures of Robinson Crusoe",
+     "a": "Daniel Defoe",
+     "g": "Stories"
+    },
+    {
+     "src": "pg:45",
+     "t": "Anne of Green Gables",
+     "a": "L. M. Montgomery",
+     "g": "Stories"
+    },
+    {
+     "src": "pg:514",
+     "t": "Little Women",
+     "a": "Louisa May Alcott",
+     "g": "Stories"
+    },
+    {
+     "src": "pg:113",
+     "t": "The Secret Garden",
+     "a": "Frances Hodgson Burnett",
+     "g": "Stories"
+    }
+   ]
+  },
+  {
+   "id": "gutenberg-catalog",
+   "kind": "gutenberg",
+   "title": "Project Gutenberg Catalog",
+   "desc": "Browse and search all 70,000+ English public-domain books by genre, then download any of them while you're online.",
+   "category": "Books",
+   "size": 30000000,
+   "url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz"
+  },
+  {
+   "id": "pg-philosophy",
+   "kind": "zim",
+   "title": "Gutenberg Shelf: Philosophy, Psychology & Religion",
+   "desc": "Every English Project Gutenberg book in the philosophy, psychology & religion section of the Library of Congress classification.",
+   "category": "Books",
+   "size": 6365165568,
+   "zimName": "gutenberg_en_lcc-b",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-b_2026-03.zim",
+   "date": "2026-03-05",
+   "articles": 6180,
+   "images": false
+  },
+  {
+   "id": "pg-science",
+   "kind": "zim",
+   "title": "Gutenberg Shelf: Science",
+   "desc": "Every English Project Gutenberg book in the science section of the Library of Congress classification.",
+   "category": "Books",
+   "size": 17724715008,
+   "zimName": "gutenberg_en_lcc-q",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-q_2026-03.zim",
+   "date": "2026-03-06",
+   "articles": 3663,
+   "images": false
+  },
+  {
+   "id": "pg-medicine",
+   "kind": "zim",
+   "title": "Gutenberg Shelf: Medicine",
+   "desc": "Every English Project Gutenberg book in the medicine section of the Library of Congress classification.",
+   "category": "Books",
+   "size": 2019298304,
+   "zimName": "gutenberg_en_lcc-r",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-r_2026-03.zim",
+   "date": "2026-03-06",
+   "articles": 1094,
+   "images": false
+  },
+  {
+   "id": "pg-agriculture",
+   "kind": "zim",
+   "title": "Gutenberg Shelf: Agriculture",
+   "desc": "Every English Project Gutenberg book in the agriculture section of the Library of Congress classification.",
+   "category": "Books",
+   "size": 4532683776,
+   "zimName": "gutenberg_en_lcc-s",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-s_2026-03.zim",
+   "date": "2026-03-06",
+   "articles": 1258,
+   "images": false
+  },
+  {
+   "id": "pg-technology",
+   "kind": "zim",
+   "title": "Gutenberg Shelf: Technology",
+   "desc": "Every English Project Gutenberg book in the technology section of the Library of Congress classification.",
+   "category": "Books",
+   "size": 13154803712,
+   "zimName": "gutenberg_en_lcc-t",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-t_2026-03.zim",
+   "date": "2026-03-06",
+   "articles": 2550,
+   "images": false
+  },
+  {
+   "id": "pg-military",
+   "kind": "zim",
+   "title": "Gutenberg Shelf: Military Science",
+   "desc": "Every English Project Gutenberg book in the military science section of the Library of Congress classification.",
+   "category": "Books",
+   "size": 1288016896,
+   "zimName": "gutenberg_en_lcc-u",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-u_2026-03.zim",
+   "date": "2026-03-06",
+   "articles": 425,
+   "images": false
+  },
+  {
+   "id": "pg-literature",
+   "kind": "zim",
+   "title": "Gutenberg Shelf: English Literature",
+   "desc": "Every English Project Gutenberg book in the english literature section of the Library of Congress classification.",
+   "category": "Books",
+   "size": 16152121344,
+   "zimName": "gutenberg_en_lcc-pr",
+   "flavour": "",
+   "url": "https://lb.download.kiwix.org/zim/gutenberg/gutenberg_en_lcc-pr_2026-03.zim",
+   "date": "2026-03-05",
+   "articles": 11841,
+   "images": false
+  },
+  {
+   "id": "map-world",
+   "kind": "map",
+   "title": "World Overview Map",
+   "desc": "Countries, cities, major roads and water for the whole planet, down to regional detail (zoom 7).",
+   "category": "Maps",
+   "size": 190000000,
+   "areas": [
+    [
+     -180.0,
+     -85.0,
+     180.0,
+     85.0
+    ]
+   ],
+   "minZoom": 0,
+   "maxZoom": 7
+  },
+  {
+   "id": "map-na-12",
+   "kind": "map",
+   "title": "North America Road Map",
+   "desc": "United States, Canada and Mexico with highways, main roads, towns and terrain features (zoom 12). Best value for navigation between towns.",
+   "category": "Maps",
+   "size": 4100000000,
+   "areas": [
+    [
+     -170.0,
+     14.0,
+     -50.0,
+     72.0
+    ],
+    [
+     -141.0,
+     72.0,
+     -60.0,
+     84.0
+    ]
+   ],
+   "minZoom": 0,
+   "maxZoom": 12,
+   "group": "na"
+  },
+  {
+   "id": "map-na-13",
+   "kind": "map",
+   "title": "North America Street Map",
+   "desc": "United States, Canada and Mexico with most streets named (zoom 13).",
+   "category": "Maps",
+   "size": 8500000000,
+   "areas": [
+    [
+     -170.0,
+     14.0,
+     -50.0,
+     72.0
+    ],
+    [
+     -141.0,
+     72.0,
+     -60.0,
+     84.0
+    ]
+   ],
+   "minZoom": 0,
+   "maxZoom": 13,
+   "group": "na"
+  },
+  {
+   "id": "map-na-14",
+   "kind": "map",
+   "title": "North America Full Detail",
+   "desc": "United States, Canada and Mexico with every street, path and building footprint (zoom 14).",
+   "category": "Maps",
+   "size": 16700000000,
+   "areas": [
+    [
+     -170.0,
+     14.0,
+     -50.0,
+     72.0
+    ],
+    [
+     -141.0,
+     72.0,
+     -60.0,
+     84.0
+    ]
+   ],
+   "minZoom": 0,
+   "maxZoom": 14,
+   "group": "na"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+[
+ {"id":"priorities","title":"First Steps in an Emergency","summary":"Check for danger, call for help, and the order of survival priorities."},
+ {"id":"bleeding","title":"Severe Bleeding","summary":"Direct pressure, wound packing and tourniquets."},
+ {"id":"cpr","title":"CPR & AED","summary":"Hands-only CPR for adults, and when to use an AED."},
+ {"id":"choking","title":"Choking","summary":"Helping an adult or child who cannot breathe, cough or speak."},
+ {"id":"burns-shock","title":"Burns, Shock & Fractures","summary":"Cooling burns, treating shock, and immobilizing injuries."},
+ {"id":"heat-cold","title":"Heat & Cold Emergencies","summary":"Hypothermia, frostbite, heat exhaustion and heat stroke."},
+ {"id":"water","title":"Making Water Safe","summary":"Boiling, bleach doses and storing water."},
+ {"id":"food","title":"Food Safety Without Power","summary":"How long refrigerated and frozen food stays safe."},
+ {"id":"co","title":"Carbon Monoxide & Generators","summary":"Invisible, deadly gas from engines, grills and heaters."},
+ {"id":"shelter","title":"Shelter & Staying Warm","summary":"Protecting yourself from the weather."},
+ {"id":"signals","title":"Signaling for Rescue","summary":"SOS, ground-to-air signals, whistles and mirrors."},
+ {"id":"navigation","title":"Finding Direction Without GPS","summary":"Using the sun, a shadow stick and the North Star."},
+ {"id":"morse","title":"Morse Code","summary":"The full alphabet, numbers and procedure signals."},
+ {"id":"kit","title":"Emergency Kit Checklist","summary":"What to keep ready at home and in the car."}
+]

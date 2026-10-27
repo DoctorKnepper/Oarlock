@@ -1,0 +1,13 @@
+-keep class org.kiwix.** { *; }
+-keep class com.github.luben.zstd.** { *; }
+-keepclassmembers class * { @android.webkit.JavascriptInterface <methods>; }
+-dontwarn org.apache.commons.compress.**
+-dontwarn org.brotli.**
+-dontwarn org.tukaani.**
+-dontwarn com.github.luben.zstd.**
+-dontwarn org.objectweb.asm.**
+-dontwarn com.getkeepsafe.relinker.**
+-keep class org.apache.commons.compress.compressors.bzip2.** { *; }
+# Methods called from the map page's JavaScript
+-keepattributes JavascriptInterface,*Annotation*
+-keep class com.doctorknepper.ark.ui.Bridge { public *; }
