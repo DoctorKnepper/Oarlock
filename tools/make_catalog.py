@@ -60,11 +60,11 @@ P(zim("wikibooks", "wikibooks_en_all", "nopic", "Wikibooks", "Open textbooks and
 P({"id": "wikipedia", "kind": "wikipedia", "title": "Wikipedia (English, full text)",
    "desc": "All 7 million English Wikipedia articles as text, straight from Wikimedia's official dump. Opens one article at a time without unpacking the rest. Optional Optimize step shrinks it further.",
    "category": "Encyclopedias", "size": 26917225724 + 285227194, "dumpUrl": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2",
-   "indexUrl": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream-index.txt.bz2", "indexSize": 285227194, "extraSpace": 700_000_000})
+   "indexUrl": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream-index.txt.bz2", "indexSize": 285227194, "extraSpace": 700_000_000, "wiki": "enwiki", "date": "2026-10-01"})
 P({"id": "simplewiki", "kind": "wikipedia", "title": "Simple English Wikipedia",
    "desc": "About 270,000 articles written in plain English. A light alternative or companion to the full Wikipedia.",
    "category": "Encyclopedias", "size": 387919857 + 10_000_000, "dumpUrl": "https://dumps.wikimedia.org/simplewiki/latest/simplewiki-latest-pages-articles-multistream.xml.bz2",
-   "indexUrl": "https://dumps.wikimedia.org/simplewiki/latest/simplewiki-latest-pages-articles-multistream-index.txt.bz2", "indexSize": 10_000_000, "extraSpace": 20_000_000})
+   "indexUrl": "https://dumps.wikimedia.org/simplewiki/latest/simplewiki-latest-pages-articles-multistream-index.txt.bz2", "indexSize": 10_000_000, "extraSpace": 20_000_000, "wiki": "simplewiki", "date": "2026-10-01"})
 P(zim("wiki-top", "wikipedia_en_top", "maxi", "Best of Wikipedia (with images)", "The ~50,000 most-read Wikipedia articles with pictures. Its images also appear in the full-text Wikipedia.", "Encyclopedias", True))
 for (pid, name, title) in [("wiki-chemistry", "wikipedia_en_chemistry", "Chemistry"), ("wiki-physics", "wikipedia_en_physics", "Physics"),
                            ("wiki-mathematics", "wikipedia_en_mathematics", "Mathematics"), ("wiki-geography", "wikipedia_en_geography", "Geography"),
@@ -98,10 +98,10 @@ for c in books:
         if it['src'] in lite: it['lite'] = True  # very large illustrated edition: download the text-only EPUB instead
     size = sum(lite.get(it['src']) or known.get(it['src'], 3_000_000) for it in c['items'])
     P({"id": c['id'], "kind": "books", "title": c['name'], "desc": c['desc'] + f" {n} books.", "category": "Books",
-       "size": size, "items": c['items']})
+       "size": size, "items": c['items'], "date": "2026-10-27"})
 P({"id": "gutenberg-catalog", "kind": "gutenberg", "title": "Project Gutenberg Catalog",
    "desc": "Browse and search all 70,000+ English public-domain books by genre, then download any of them while you're online.",
-   "category": "Books", "size": 30_000_000, "url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz"})
+   "category": "Books", "size": 30_000_000, "url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz", "date": "2026-10-27"})
 for (pid, name, title) in [("pg-philosophy", "gutenberg_en_lcc-b", "Philosophy, Psychology & Religion"), ("pg-science", "gutenberg_en_lcc-q", "Science"),
                            ("pg-medicine", "gutenberg_en_lcc-r", "Medicine"), ("pg-agriculture", "gutenberg_en_lcc-s", "Agriculture"),
                            ("pg-technology", "gutenberg_en_lcc-t", "Technology"), ("pg-military", "gutenberg_en_lcc-u", "Military Science"),
@@ -111,20 +111,24 @@ for (pid, name, title) in [("pg-philosophy", "gutenberg_en_lcc-b", "Philosophy, 
 # --- Maps (sizes measured from the Protomaps planet build, Oct 2026)
 NA = [[-170.0, 14.0, -50.0, 72.0], [-141.0, 72.0, -60.0, 84.0]]
 P({"id": "map-world", "kind": "map", "title": "World Overview Map", "desc": "Countries, cities, major roads and water for the whole planet, down to regional detail (zoom 7).",
-   "category": "Maps", "size": 190_000_000, "areas": [[-180.0, -85.0, 180.0, 85.0]], "minZoom": 0, "maxZoom": 7})
+   "category": "Maps", "size": 190_000_000, "areas": [[-180.0, -85.0, 180.0, 85.0]], "minZoom": 0, "maxZoom": 7, "date": "2026-10-26"})
 P({"id": "map-na-12", "kind": "map", "title": "North America Road Map", "desc": "United States, Canada and Mexico with highways, main roads, towns and terrain features (zoom 12). Best value for navigation between towns.",
-   "category": "Maps", "size": 4_100_000_000, "areas": NA, "minZoom": 0, "maxZoom": 12, "group": "na"})
-P({"id": "map-na-13", "kind": "map", "title": "North America Street Map", "desc": "United States, Canada and Mexico with most streets named (zoom 13).",
-   "category": "Maps", "size": 8_500_000_000, "areas": NA, "minZoom": 0, "maxZoom": 13, "group": "na"})
-P({"id": "map-na-14", "kind": "map", "title": "North America Full Detail", "desc": "United States, Canada and Mexico with every street, path and building footprint (zoom 14).",
-   "category": "Maps", "size": 16_700_000_000, "areas": NA, "minZoom": 0, "maxZoom": 14, "group": "na"})
+   "category": "Maps", "size": 4_100_000_000, "areas": NA, "minZoom": 0, "maxZoom": 12, "group": "na", "date": "2026-10-26"})
+P({"id": "map-na-13", "kind": "map", "title": "North America Street Map", "desc": "United States, Canada and Mexico with most streets named (zoom 13). Replaces the Road Map if you have it.",
+   "category": "Maps", "size": 8_500_000_000, "areas": NA, "minZoom": 0, "maxZoom": 13, "group": "na", "date": "2026-10-26"})
+P({"id": "map-na-14", "kind": "map", "title": "North America Full Detail", "desc": "United States, Canada and Mexico with every street and path (zoom 14). Replaces the Road or Street Map if you have one.",
+   "category": "Maps", "size": 16_700_000_000, "areas": NA, "minZoom": 0, "maxZoom": 14, "group": "na", "date": "2026-10-26"})
 
-defcon = ["wikem", "zim-medicine", "water", "knots-lib", "food-prep", "military-medicine", "map-world", "wikimed", "post-disaster",
-          "map-na-12", "books-sacred", "books-skills", "simplewiki", "wikipedia", "ifixit", "appropedia", "wikivoyage", "armypubs"]
+# DEFCON Core: small enough for nearly any phone (WikiMed included by the owner's choice). Full adds the large packs.
+core = ["wikem", "zim-medicine", "military-medicine", "wikimed", "water", "knots-lib", "food-prep", "map-world", "post-disaster",
+        "simplewiki", "books-skills", "books-sacred", "appropedia", "wikivoyage"]
+full = ["map-na-12", "wikipedia", "armypubs", "ifixit"]
 ids = {p['id'] for p in packs}
-for d in defcon:
+for d in core + full:
     assert d in ids, d
 cats = ["Medical", "Survival", "Maps", "Encyclopedias", "Image Packs", "Repair & Skills", "Books", "Education"]
-json.dump({"version": 1, "generated": "2026-10-27", "categories": cats, "defcon": defcon, "packs": packs}, open(OUT, 'w'), ensure_ascii=False, indent=1)
-tot = sum(p['size'] for p in packs if p['id'] in defcon)
-print(len(packs), "packs; default DEFCON set", round(tot / 1e9, 1), "GB")
+json.dump({"version": 1, "generated": "2026-10-27", "categories": cats, "defcon": {"core": core, "full": full}, "packs": packs}, open(OUT, 'w'), ensure_ascii=False, indent=1)
+tc = sum(p['size'] for p in packs if p['id'] in core); tf = tc + sum(p['size'] for p in packs if p['id'] in full)
+print(len(packs), "packs; DEFCON Core", round(tc / 1e9, 2), "GB; Full", round(tf / 1e9, 1), "GB")
+undated = [p['id'] for p in packs if not p.get('date')]
+print("undated:", undated)

@@ -1,10 +1,10 @@
-# Ark — offline library for when the internet is gone
+# Oarlock — offline library for when the internet is gone
 
-Ark is an Android app that starts as an empty shell. You download only the packs you want, while you still have internet, and everything works afterward with no signal.
+Oarlock is an Android app that starts as an empty shell. You download only the packs you want, while you still have internet, and everything works afterward with no signal.
 
 ## Features
-- **DEFCON 1**: hold the red button for 2 seconds and Ark downloads your essentials in priority order (medical first, then survival, maps, books, Wikipedia). It keeps going with the screen off, resumes after interruptions, and skips anything that won't fit.
-- **Storage at a glance**: every download screen shows free space, what Ark uses, what's queued and what other apps use, so you can free up room or download less.
+- **DEFCON 1**: hold the red button for 2 seconds and Oarlock downloads your essentials in priority order (medical first, then survival, maps, books, Wikipedia). It keeps going with the screen off, resumes after interruptions, and skips anything that won't fit.
+- **Storage at a glance**: every download screen shows free space, what Oarlock uses, what's queued and what other apps use, so you can free up room or download less.
 - **Wikipedia**: the full English Wikipedia (about 27 GB) straight from Wikimedia's multistream dump. Articles open in a fraction of a second without unpacking the file. Optional **Optimize** step shrinks it by about 40%.
 - **Kiwix packs**: WikEM, WikiMed, Army manuals, iFixit, Appropedia, Wiktionary, LibreTexts, topic image packs and more, with full-text search.
 - **Maps**: an offline world map plus North America at your choice of detail (4–17 GB), or any area you outline. GPS works with no signal.
@@ -14,7 +14,7 @@ Ark is an Android app that starts as an empty shell. You download only the packs
 
 ## Build
 ```
-./gradlew assembleRelease   # needs ark-release.jks in the project root (see app/build.gradle.kts)
+./gradlew assembleRelease   # needs oarlock-release.jks in the project root (see app/build.gradle.kts)
 ```
 `tools/` holds the scripts that generate `app/src/main/assets/catalog.json` (Kiwix catalog, curated book lists, measured map sizes).
 

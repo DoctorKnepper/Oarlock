@@ -5,26 +5,26 @@ plugins {
 }
 
 android {
-    namespace = "com.doctorknepper.ark"
-    compileSdk = 35
+    namespace = "com.doctorknepper.oarlock"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.doctorknepper.ark"
+        applicationId = "com.doctorknepper.oarlock"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 36
+        versionCode = 2
+        versionName = "1.1"
         ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
     }
 
     signingConfigs {
         create("release") {
-            val ks = rootProject.file("ark-release.jks")
+            val ks = rootProject.file("oarlock-release.jks")
             if (ks.exists()) {
                 storeFile = ks
-                storePassword = System.getenv("ARK_KS_PASS") ?: "arkoffline"
-                keyAlias = "ark"
-                keyPassword = System.getenv("ARK_KS_PASS") ?: "arkoffline"
+                storePassword = System.getenv("OARLOCK_KS_PASS") ?: "oarlockoffline"
+                keyAlias = "oarlock"
+                keyPassword = System.getenv("OARLOCK_KS_PASS") ?: "oarlockoffline"
             }
         }
     }
@@ -34,7 +34,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            if (rootProject.file("ark-release.jks").exists()) signingConfig = signingConfigs.getByName("release")
+            if (rootProject.file("oarlock-release.jks").exists()) signingConfig = signingConfigs.getByName("release")
         }
     }
 

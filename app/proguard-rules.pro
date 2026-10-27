@@ -10,4 +10,4 @@
 -keep class org.apache.commons.compress.compressors.bzip2.** { *; }
 # Methods called from the map page's JavaScript
 -keepattributes JavascriptInterface,*Annotation*
--keep class com.doctorknepper.ark.ui.Bridge { public *; }
+-keep class com.doctorknepper.oarlock.ui.Bridge { public *; }

@@ -11,26 +11,30 @@
   "Books",
   "Education"
  ],
- "defcon": [
-  "wikem",
-  "zim-medicine",
-  "water",
-  "knots-lib",
-  "food-prep",
-  "military-medicine",
-  "map-world",
-  "wikimed",
-  "post-disaster",
-  "map-na-12",
-  "books-sacred",
-  "books-skills",
-  "simplewiki",
-  "wikipedia",
-  "ifixit",
-  "appropedia",
-  "wikivoyage",
-  "armypubs"
- ],
+ "defcon": {
+  "core": [
+   "wikem",
+   "zim-medicine",
+   "military-medicine",
+   "wikimed",
+   "water",
+   "knots-lib",
+   "food-prep",
+   "map-world",
+   "post-disaster",
+   "simplewiki",
+   "books-skills",
+   "books-sacred",
+   "appropedia",
+   "wikivoyage"
+  ],
+  "full": [
+   "map-na-12",
+   "wikipedia",
+   "armypubs",
+   "ifixit"
+  ]
+ },
  "packs": [
   {
    "id": "wikem",
@@ -392,7 +396,9 @@
    "dumpUrl": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream.xml.bz2",
    "indexUrl": "https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles-multistream-index.txt.bz2",
    "indexSize": 285227194,
-   "extraSpace": 700000000
+   "extraSpace": 700000000,
+   "wiki": "enwiki",
+   "date": "2026-10-01"
   },
   {
    "id": "simplewiki",
@@ -404,7 +410,9 @@
    "dumpUrl": "https://dumps.wikimedia.org/simplewiki/latest/simplewiki-latest-pages-articles-multistream.xml.bz2",
    "indexUrl": "https://dumps.wikimedia.org/simplewiki/latest/simplewiki-latest-pages-articles-multistream-index.txt.bz2",
    "indexSize": 10000000,
-   "extraSpace": 20000000
+   "extraSpace": 20000000,
+   "wiki": "simplewiki",
+   "date": "2026-10-01"
   },
   {
    "id": "wiki-top",
@@ -977,7 +985,8 @@
      "a": "James George Frazer",
      "g": "Study of Religion"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-uu",
@@ -1047,7 +1056,8 @@
      "a": "William Ellery Channing",
      "g": "Unitarian & Universalist"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-science",
@@ -1189,7 +1199,8 @@
      "a": "Charles Lyell",
      "g": "Earth Sciences"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-philosophy",
@@ -1403,7 +1414,8 @@
      "a": "Sun Tzu",
      "g": "Essays & Wisdom"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-mind",
@@ -1479,7 +1491,8 @@
      "a": "Karl Marx",
      "g": "Economics"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-skills",
@@ -1615,7 +1628,8 @@
      "a": "A. Frederick Collins",
      "g": "Radio"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-classics",
@@ -1721,7 +1735,8 @@
      "g": "Novels",
      "lite": true
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-poetry",
@@ -1858,7 +1873,8 @@
      "a": "Edmond Rostand",
      "g": "Drama"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-genre",
@@ -2049,7 +2065,8 @@
      "a": "Rafael Sabatini",
      "g": "Adventure"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-myth",
@@ -2138,7 +2155,8 @@
      "g": "Myth & Folk Tales",
      "lite": true
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-history",
@@ -2196,7 +2214,8 @@
      "a": "Edward Gibbon",
      "g": "Histories"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-lives",
@@ -2298,7 +2317,8 @@
      "a": "Henry David Thoreau",
      "g": "Nature Writing"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "books-children",
@@ -2370,7 +2390,8 @@
      "a": "Frances Hodgson Burnett",
      "g": "Stories"
     }
-   ]
+   ],
+   "date": "2026-10-27"
   },
   {
    "id": "gutenberg-catalog",
@@ -2379,7 +2400,8 @@
    "desc": "Browse and search all 70,000+ English public-domain books by genre, then download any of them while you're online.",
    "category": "Books",
    "size": 30000000,
-   "url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz"
+   "url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+   "date": "2026-10-27"
   },
   {
    "id": "pg-philosophy",
@@ -2495,7 +2517,8 @@
     ]
    ],
    "minZoom": 0,
-   "maxZoom": 7
+   "maxZoom": 7,
+   "date": "2026-10-26"
   },
   {
    "id": "map-na-12",
@@ -2520,13 +2543,14 @@
    ],
    "minZoom": 0,
    "maxZoom": 12,
-   "group": "na"
+   "group": "na",
+   "date": "2026-10-26"
   },
   {
    "id": "map-na-13",
    "kind": "map",
    "title": "North America Street Map",
-   "desc": "United States, Canada and Mexico with most streets named (zoom 13).",
+   "desc": "United States, Canada and Mexico with most streets named (zoom 13). Replaces the Road Map if you have it.",
    "category": "Maps",
    "size": 8500000000,
    "areas": [
@@ -2545,13 +2569,14 @@
    ],
    "minZoom": 0,
    "maxZoom": 13,
-   "group": "na"
+   "group": "na",
+   "date": "2026-10-26"
   },
   {
    "id": "map-na-14",
    "kind": "map",
    "title": "North America Full Detail",
-   "desc": "United States, Canada and Mexico with every street, path and building footprint (zoom 14).",
+   "desc": "United States, Canada and Mexico with every street and path (zoom 14). Replaces the Road or Street Map if you have one.",
    "category": "Maps",
    "size": 16700000000,
    "areas": [
@@ -2570,7 +2595,8 @@
    ],
    "minZoom": 0,
    "maxZoom": 14,
-   "group": "na"
+   "group": "na",
+   "date": "2026-10-26"
   }
  ]
 }
