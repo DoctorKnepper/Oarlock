@@ -73,6 +73,7 @@ import kotlinx.coroutines.launch
 import androidx.compose.foundation.Image
 import androidx.compose.material.icons.filled.Badge
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Download
 import androidx.compose.material.icons.filled.MyLocation
 import androidx.compose.material.icons.filled.Tune
 import androidx.compose.material3.Button
@@ -111,7 +112,7 @@ fun HomeScreen(nav: Nav) {
 
     Column(Modifier.fillMaxSize().background(t.c(t.bg)).statusBarsPadding().verticalScroll(rememberScrollState()).padding(horizontal = 16.dp)) {
         Row(Modifier.fillMaxWidth().padding(top = 8.dp), verticalAlignment = Alignment.CenterVertically) {
-            Image(painterResource(R.drawable.ic_launcher_foreground), null, Modifier.size(52.dp))
+            Image(painterResource(R.drawable.logo_badge), null, Modifier.size(46.dp))
             Spacer(Modifier.width(8.dp))
             Column(Modifier.weight(1f)) {
                 Text("OARLOCK", style = MaterialTheme.typography.headlineMedium.copy(fontFamily = FontFamily.Serif, letterSpacing = 5.sp, fontWeight = FontWeight.Bold), color = t.c(t.accent))
@@ -149,7 +150,7 @@ fun HomeScreen(nav: Nav) {
             Panel(onClick = { nav.go("downloads") }) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Label(
-                        when { !engine.running -> "Downloads paused"; engine.defconActive -> "DEFCON 1 active"; else -> "Downloading" },
+                        when { !engine.running -> "Downloads paused"; engine.defconActive -> "Emergency Download active"; else -> "Downloading" },
                         color = if (engine.defconActive && engine.running) t.c(t.danger) else t.c(t.accent),
                     )
                     Spacer(Modifier.weight(1f))
@@ -213,7 +214,7 @@ fun HomeScreen(nav: Nav) {
             DefconButton(enabled = !full.complete) { choose = true }
             Spacer(Modifier.height(6.dp))
             Text(
-                if (!full.complete) "Hold for 2 seconds, then choose Core (the essentials) or Full." else "All DEFCON packs downloaded.",
+                if (!full.complete) "Hold for 2 seconds, then choose Core (the essentials) or Full. Most important packs download first." else "All Emergency Download packs are on this phone.",
                 style = MaterialTheme.typography.bodySmall, color = t.c(t.muted), modifier = Modifier.align(Alignment.CenterHorizontally),
             )
         }
@@ -273,7 +274,7 @@ private fun TierDialog(core: Plans.Tier, full: Plans.Tier, onDismiss: () -> Unit
     var showList by remember { mutableStateOf<Plans.Tier?>(null) }
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("DEFCON 1", color = t.c(t.danger), fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold, letterSpacing = 3.sp) },
+        title = { Text("EMERGENCY DOWNLOAD", color = t.c(t.danger), fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold, letterSpacing = 2.sp) },
         text = {
             Column(Modifier.heightIn(max = 520.dp).verticalScroll(rememberScrollState())) {
                 Text("${humanBytes(core.free)} free on this phone. Downloads keep going with the screen off and use mobile data if there's no Wi-Fi.",
@@ -390,8 +391,10 @@ fun DefconButton(enabled: Boolean, onActivate: () -> Unit) {
                     size = Size(size.width - stroke, size.height - stroke), style = Stroke(stroke, cap = StrokeCap.Round))
             }
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text("DEFCON", color = red.copy(alpha = if (enabled) 1f else 0.4f), fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold, letterSpacing = 4.sp, fontSize = 16.sp)
-                Text("1", color = red.copy(alpha = if (enabled) 1f else 0.4f), fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Black, fontSize = 56.sp)
+                Text("EMERGENCY", color = red.copy(alpha = if (enabled) 1f else 0.4f), fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold, letterSpacing = 1.5.sp, fontSize = 13.sp)
+                Icon(Icons.Filled.Download, null, tint = red.copy(alpha = if (enabled) 1f else 0.4f), modifier = Modifier.size(46.dp))
+                Text("DOWNLOAD", color = red.copy(alpha = if (enabled) 1f else 0.4f), fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold, letterSpacing = 1.5.sp, fontSize = 13.sp)
+                Spacer(Modifier.height(4.dp))
                 Text(if (enabled) "HOLD" else "READY", color = red.copy(alpha = 0.7f), fontFamily = FontFamily.Monospace, fontSize = 11.sp, letterSpacing = 3.sp)
             }
         }

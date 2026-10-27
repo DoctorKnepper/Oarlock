@@ -116,7 +116,7 @@ fun SettingsScreen(nav: Nav) {
 
             Spacer(Modifier.height(20.dp))
             Label("Downloads")
-            Toggle("Large packs on Wi-Fi only", "Packs over 1 GB wait for Wi-Fi. DEFCON 1 ignores this and uses any connection.", wifiOnly) { Ark.settings.setWifiOnlyLarge(it) }
+            Toggle("Large packs on Wi-Fi only", "Packs over 1 GB wait for Wi-Fi. Emergency Download ignores this and uses any connection.", wifiOnly) { Ark.settings.setWifiOnlyLarge(it) }
 
             Spacer(Modifier.height(20.dp))
             Label("Wikipedia pictures")

@@ -94,7 +94,7 @@ fun LibraryScreen(nav: Nav) {
             if (packs.isEmpty()) item {
                 Panel {
                     Text("Your library is empty", style = MaterialTheme.typography.titleSmall)
-                    Text("Download packs from the catalog, or hold DEFCON 1 on the home screen.", style = MaterialTheme.typography.bodySmall, color = t.c(t.muted))
+                    Text("Download packs from the catalog, or hold Emergency Download on the home screen.", style = MaterialTheme.typography.bodySmall, color = t.c(t.muted))
                     Spacer(Modifier.height(8.dp))
                     OutlinedButton(onClick = { nav.go("catalog/") }) { Text("Open catalog") }
                 }

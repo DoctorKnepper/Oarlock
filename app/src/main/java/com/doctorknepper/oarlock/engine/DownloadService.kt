@@ -82,7 +82,7 @@ class DownloadService : Service() {
         val s = Ark.engine.state.value
         val speed = if (s.bytesPerSec > 0) " · ${humanBytes(s.bytesPerSec)}/s" else ""
         val left = s.queue.size - 1
-        val title = (if (s.defconActive) "DEFCON 1 · " else "") + s.currentTitle
+        val title = (if (s.defconActive) "Emergency Download · " else "") + s.currentTitle
         val text = s.step + speed + if (left > 0) " · $left more queued" else ""
         getSystemService(NotificationManager::class.java).notify(NOTE_ID, build(title, text, s.done, s.total))
     }

@@ -121,8 +121,8 @@ fun PackCard(def: PackDef, nav: Nav, freeAfterQueue: Long) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(humanBytes(def.size), style = MaterialTheme.typography.labelMedium, color = t.c(t.accent))
                     if (def.hasImages) { Spacer(Modifier.width(8.dp)); Label("images") }
-                    if (def.id in Plans.coreIds()) { Spacer(Modifier.width(8.dp)); Label("DEFCON core", color = t.c(t.danger)) }
-                    else if (def.id in Plans.fullExtraIds()) { Spacer(Modifier.width(8.dp)); Label("DEFCON full", color = t.c(t.danger)) }
+                    if (def.id in Plans.coreIds()) { Spacer(Modifier.width(8.dp)); Label("Emergency core", color = t.c(t.danger)) }
+                    else if (def.id in Plans.fullExtraIds()) { Spacer(Modifier.width(8.dp)); Label("Emergency full", color = t.c(t.danger)) }
                 }
                 PackDate(def.date, def.kind == PackKind.BOOKS || def.kind == PackKind.GUTENBERG,
                     installed?.takeIf { it.state == PackState.INSTALLED }?.info?.optString("sourceDate"))

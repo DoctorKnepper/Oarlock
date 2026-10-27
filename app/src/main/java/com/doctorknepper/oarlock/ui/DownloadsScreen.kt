@@ -57,7 +57,7 @@ fun DownloadsScreen(nav: Nav) {
             item {
                 if (s.running) {
                     Panel {
-                        Label(if (s.defconActive) "DEFCON 1 · in progress" else "In progress", color = if (s.defconActive) t.c(t.danger) else t.c(t.accent))
+                        Label(if (s.defconActive) "Emergency Download · in progress" else "In progress", color = if (s.defconActive) t.c(t.danger) else t.c(t.accent))
                         Spacer(Modifier.height(6.dp))
                         Text(s.currentTitle, style = MaterialTheme.typography.titleMedium)
                         Text(s.step, style = MaterialTheme.typography.bodySmall, color = t.c(t.muted))
@@ -84,7 +84,7 @@ fun DownloadsScreen(nav: Nav) {
                 } else {
                     Panel {
                         Text("Nothing downloading", style = MaterialTheme.typography.titleMedium)
-                        Text("Pick packs from the catalog, or hold DEFCON 1 on the home screen to get your essentials.", style = MaterialTheme.typography.bodySmall, color = t.c(t.muted))
+                        Text("Pick packs from the catalog, or hold Emergency Download on the home screen to get your essentials.", style = MaterialTheme.typography.bodySmall, color = t.c(t.muted))
                     }
                 }
             }
@@ -138,7 +138,7 @@ fun DefconScreen(nav: Nav) {
     fun save() { Ark.settings.setDefconCore(core.toList()); Ark.settings.setDefconFull(full.toList()) }
     val order = if (tab == 0) core else full
     Column(Modifier.fillMaxSize().background(t.c(t.bg))) {
-        ArkTopBar("DEFCON 1 lists", nav::back) {
+        ArkTopBar("Emergency Download lists", nav::back) {
             TextButton(onClick = { Ark.settings.resetDefcon(); core.clear(); core.addAll(Ark.catalog.defaultCore); full.clear(); full.addAll(Ark.catalog.defaultFullExtra) }) { Text("Reset") }
         }
         TabRow(selectedTabIndex = tab, containerColor = t.c(t.bg), contentColor = t.c(t.accent)) {
@@ -148,7 +148,7 @@ fun DefconScreen(nav: Nav) {
         val coreSize = core.sumOf { Ark.catalog[it]?.size ?: 0 }
         val fullSize = coreSize + full.sumOf { Ark.catalog[it]?.size ?: 0 }
         Column(Modifier.padding(16.dp)) {
-            Text(if (tab == 0) "Core is the default when you hold DEFCON 1: the essentials, small enough for nearly any phone. Put what you'd need first at the top."
+            Text(if (tab == 0) "Core is the default when you hold Emergency Download: the essentials, small enough for nearly any phone. Put what you'd need first at the top."
                 else "Full downloads Core first, then these larger packs in this order.",
                 style = MaterialTheme.typography.bodySmall, color = t.c(t.muted))
             Spacer(Modifier.height(8.dp))

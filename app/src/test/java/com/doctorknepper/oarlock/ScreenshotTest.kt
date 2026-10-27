@@ -78,6 +78,29 @@ class ScreenshotTest {
     }
 
     @Test fun home() = shoot("home", "home")
+
+    @Test fun icon() {
+        val ctx = ApplicationProvider.getApplicationContext<android.content.Context>()
+        val out2 = File(out, "icon.png")
+        val bmp = Bitmap.createBitmap(1080, 400, Bitmap.Config.ARGB_8888)
+        val c = Canvas(bmp); c.drawColor(0xFF1C1C1C.toInt())
+        // the launcher layers as the system composes them (108dp canvas, outer 18dp masked off), at three sizes
+        listOf(360 to 20, 180 to 420, 96 to 640).forEach { (size, x) ->
+            val full = size * 108 / 72; val off = size * 18 / 72
+            val layer = Bitmap.createBitmap(full, full, Bitmap.Config.ARGB_8888); val lc = Canvas(layer)
+            for (id in listOf(R.drawable.ic_launcher_background, R.drawable.ic_launcher_foreground)) {
+                val d = androidx.core.content.ContextCompat.getDrawable(ctx, id)!!; d.setBounds(0, 0, full, full); d.draw(lc)
+            }
+            val masked = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888); val mc = Canvas(masked)
+            val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+            mc.drawCircle(size / 2f, size / 2f, size / 2f, paint)
+            paint.xfermode = android.graphics.PorterDuffXfermode(android.graphics.PorterDuff.Mode.SRC_IN)
+            mc.drawBitmap(layer, -off.toFloat(), -off.toFloat(), paint)
+            c.drawBitmap(masked, x.toFloat(), 20f, null)
+        }
+        val logo = androidx.core.content.ContextCompat.getDrawable(ctx, R.drawable.logo_badge)!!; logo.setBounds(760, 20, 1060, 320); logo.draw(c)
+        FileOutputStream(out2).use { bmp.compress(Bitmap.CompressFormat.PNG, 100, it) }
+    }
     @Test fun homeRed() = shoot("home-red", "home", "red")
     @Test fun homePaper() = shoot("home-paper", "home", "paper")
     @Test fun catalog() = shoot("catalog", "catalog/Books")

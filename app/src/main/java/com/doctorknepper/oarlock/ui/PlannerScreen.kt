@@ -66,7 +66,7 @@ fun PlannerScreen(nav: Nav) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Label("Suggested · ${chosen.size} packs · ${humanBytes(total)}", Modifier.weight(1f))
                 }
-                Text("DEFCON Core comes first, then Full, then everything else by how useful it is in an emergency. Untick anything you don't want.",
+                Text("Emergency Download Core comes first, then Full, then everything else by how useful it is in an emergency. Untick anything you don't want.",
                     style = MaterialTheme.typography.bodySmall, color = t.c(t.muted))
             }
             if (plan.isEmpty()) item {
@@ -79,7 +79,7 @@ fun PlannerScreen(nav: Nav) {
                         colors = CheckboxDefaults.colors(checkedColor = t.c(t.accent), checkmarkColor = t.c(t.onAccent)))
                     Column(Modifier.weight(1f)) {
                         Text(p.title, style = MaterialTheme.typography.bodyMedium)
-                        val tag = when (p.id) { in Plans.coreIds() -> "DEFCON Core"; in Plans.fullExtraIds() -> "DEFCON Full"; else -> p.category }
+                        val tag = when (p.id) { in Plans.coreIds() -> "Emergency Core"; in Plans.fullExtraIds() -> "Emergency Full"; else -> p.category }
                         Text(tag, style = MaterialTheme.typography.labelSmall, color = t.c(t.muted))
                     }
                     Text(humanBytes(p.size), style = MaterialTheme.typography.labelMedium, color = t.c(t.muted))
