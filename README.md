@@ -1,4 +1,4 @@
-# Oarlock — offline library for when the internet is gone
+# Oarlock — an offline library for when the internet is gone
 
 Oarlock is an Android app that starts as an empty shell. You download only the packs you want, while you still have internet, and everything works afterward with no signal.
 
